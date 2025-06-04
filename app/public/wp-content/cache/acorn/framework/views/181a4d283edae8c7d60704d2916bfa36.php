@@ -87,7 +87,7 @@
         
         <ul class="hidden peer-checked:block md:flex max-lg:space-x-4 lg:space-x-10 mt-3 md:mt-0 text-white font-medium flex-col md:flex-row absolute md:static top-full left-0 w-40 md:w-auto bg-[#232536] md:bg-transparent rounded-md md:rounded-none z-50">
           <li class="block md:inline bg-gray-700 md:bg-transparent px-3 py-2 md:p-0 border-b border-gray-600 md:border-none cursor-pointer hover:bg-gray-600 md:hover:bg-transparent rounded-md w-full md:w-[75px]">
-            <a href="#">Inicio</a>
+            <a href="http://bufete-abogados.local/">Inicio</a>
           </li>
           <li class="block md:inline bg-gray-700 md:bg-transparent px-3 py-2 md:p-0 border-b border-gray-600 md:border-none cursor-pointer hover:bg-gray-600 md:hover:bg-transparent rounded-md w-full md:w-[120px]">
             <a href="#">Sobre nosotros</a>
@@ -100,8 +100,7 @@
           </li>
         </ul>
       </nav>
-
-      <a href="#" class="h-[50px] w-[150px] max-md:w-[130px] bg-white text-[#1e1f36] font-bold rounded-md hover:scale-105 transition-transform duration-200 flex items-center justify-center">
+      <a href="<?php echo e(is_user_logged_in() ? '#' : wp_login_url("http://bufete-abogados.local/")); ?>" class="h-[50px] w-[150px] max-md:w-[130px] bg-white text-[#1e1f36] font-bold rounded-md hover:scale-105 transition-transform duration-200 flex items-center justify-center">
         Área de clientes
       </a>
     </div>
@@ -113,7 +112,7 @@
   <div class="bg-[#767CB5] lg:h-[600px] w-3/5 max-md:w-full h-responsive">
     <h1 class="text-[70px] max-sm:text-[55px] leading-22 font-bold lg:pl-12 pl-4 lg:mt-15 mt-10 lg:[width:700px] h-responsive">Contáctanos y cuéntanos como podemos ayudarte</h1>
     <p class="text-[25px] max-sm:text-[20px] leading-6 lg:pl-12 pl-4 pr-4 pt-15 lg:[width:600px] w-full h-responsive">Un bufete de abogados con más de 25 años de experiencia</p>
-    <a href="#" class="boton text-[20px] lg:ml-12 ml-4 mt-15 lg:mb-0 mb-7 [width:186px] [height:65px] flex items-center justify-center bg-white text-[#232536] rounded-[10px] font-bold font-sans hover:scale-105 transition-transform duration-200">
+    <a href="<?php echo e(is_user_logged_in() ? '#' : wp_login_url("http://bufete-abogados.local/")); ?>" class="boton text-[20px] lg:ml-12 ml-4 mt-15 lg:mb-0 mb-7 [width:186px] [height:65px] flex items-center justify-center bg-white text-[#232536] rounded-[10px] font-bold font-sans hover:scale-105 transition-transform duration-200">
       Área de clientes
     </a>
   </div>
@@ -196,23 +195,43 @@
 
 <section class="py-10 bg-[#232536]">
   <div class="h-[80px] bg-[#232536] px-5">
-    <div class="flex items-center justify-between h-[80px]">
-      <div class="flex items-center space-x-4">
-        <img src="<?php echo e(Vite::asset('resources/images/logo.jpg')); ?>" alt="Tu imagen de perfil" class="w-[50px] h-[50px] rounded-full">
-        <span class="text-[12px] text-white">Abogados</span>
-      </div>
-      <div class="flex items-center space-x-15">
-        <nav class="max-md:hidden flex space-x-15 text-white font-medium">
-          <a href="#">Inicio</a>
-          <a href="#">Sobre nosotros</a>
-          <a href="#">Abogados</a>
-          <a href="#">Contáctanos</a>
-        </nav>
-        <a href="#" class="h-[50px] w-[150px] max-md:w-[130px] bg-white text-[#1e1f36] font-bold rounded-md hover:scale-105 transition-transform duration-200 flex items-center justify-center">
-          Área de clientes
-        </a>
-      </div>
+  <div class="flex items-center justify-between h-[80px]">
+    <div class="flex items-center space-x-4">
+      <img src="<?php echo e(Vite::asset('resources/images/logo.jpg')); ?>" alt="Tu imagen de perfil" class="w-[50px] h-[50px] rounded-full">
+      <span class="text-[12px] text-white">Abogados</span>
     </div>
+    <div class="flex items-center space-x-15 max-lg:space-x-2">
+      <nav class="bg-[#232536] px-1 py-3 relative">
+        
+        <input type="checkbox" id="menuToggle" class="peer hidden" />
+
+        
+        <label for="menuToggle" class="peer-checked:bg-gray-700 block md:hidden cursor-pointer text-white text-3xl font-bold select-none w-10 h-10 leading-[2.4rem] text-center rounded-md border border-gray-600">
+          ☰
+        </label>
+
+        
+        <ul class="hidden peer-checked:block md:flex max-lg:space-x-4 lg:space-x-10 mt-3 md:mt-0 text-white font-medium flex-col md:flex-row absolute md:static top-full left-0 w-40 md:w-auto bg-[#232536] md:bg-transparent rounded-md md:rounded-none z-50">
+          <li class="block md:inline bg-gray-700 md:bg-transparent px-3 py-2 md:p-0 border-b border-gray-600 md:border-none cursor-pointer hover:bg-gray-600 md:hover:bg-transparent rounded-md w-full md:w-[75px]">
+            <a href="http://bufete-abogados.local/">Inicio</a>
+          </li>
+          <li class="block md:inline bg-gray-700 md:bg-transparent px-3 py-2 md:p-0 border-b border-gray-600 md:border-none cursor-pointer hover:bg-gray-600 md:hover:bg-transparent rounded-md w-full md:w-[120px]">
+            <a href="#">Sobre nosotros</a>
+          </li>
+          <li class="block md:inline bg-gray-700 md:bg-transparent px-3 py-2 md:p-0 border-b border-gray-600 md:border-none cursor-pointer hover:bg-gray-600 md:hover:bg-transparent rounded-md w-full md:w-[75px]">
+            <a href="#">Abogados</a>
+          </li>
+          <li class="block md:inline bg-gray-700 md:bg-transparent px-3 py-2 md:p-0 border-b border-gray-600 md:border-none cursor-pointer hover:bg-gray-600 md:hover:bg-transparent rounded-md w-full md:w-[90px]">
+            <a href="#">Contáctanos</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="<?php echo e(is_user_logged_in() ? '#' : wp_login_url("http://bufete-abogados.local/")); ?>" class="h-[50px] w-[150px] max-md:w-[130px] bg-white text-[#1e1f36] font-bold rounded-md hover:scale-105 transition-transform duration-200 flex items-center justify-center">
+        Área de clientes
+      </a>
+    </div>
+  </div>
   </div>
 
 
@@ -249,7 +268,7 @@
   <?php else: ?>
     <div class="mx-2 my-10 bg-[#2A2B39] p-6 rounded-lg text-white text-center">
       <p class="text-[20px]">Debes iniciar sesión para dejar un comentario.</p>
-      <a href="<?php echo e(wp_login_url(get_permalink())); ?>" class="inline-block mt-4 px-6 py-3 bg-blue-600 rounded-[10px] font-bold hover:bg-blue-700 transition">
+      <a href="<?php echo e(wp_login_url("http://bufete-abogados.local/")); ?>" class="inline-block mt-4 px-6 py-3 bg-[#6A6B75] rounded-[10px] font-bold hover:bg-[#767CB5] hover:scale-105 transition-transform duration-200">
         Iniciar sesión
       </a>
     </div>
