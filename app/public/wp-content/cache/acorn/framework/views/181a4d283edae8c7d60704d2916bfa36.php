@@ -11,7 +11,10 @@
   ]);
 
   /* Obtener los comentarios */
+  $post_id = get_the_ID();
+
   $comments_raw = get_comments([
+    'post_id' => $post_id,
     'status'  => 'approve',
     'orderby' => 'comment_date',
     'order'   => 'DESC',
@@ -35,8 +38,33 @@
 ?>
 
 <script>
-    // Creo el script para las paginaciones
-    window.testimonials = <?php echo json_encode($comments, 15, 512) ?>;
+  // Creo el script para las paginaciones
+  window.testimonials = <?php echo json_encode($comments, 15, 512) ?>;
+
+  let comments = window.testimonials || [];
+  let index = 0;
+
+  function renderComment(i) {
+    if (!comments[i]) return;
+    document.getElementById('commentContent').textContent = comments[i].comment_content;
+    document.getElementById('commentAuthor').textContent = comments[i].comment_author;
+    document.getElementById('authorCity').textContent = comments[i].acf.city || '';
+    document.getElementById('authorCountry').textContent = comments[i].acf.country || '';
+    document.getElementById('authorImage').src = comments[i].acf.profile_image || 'https://via.placeholder.com/60';
+  }
+
+  function previousPage() {
+    index = (index - 1 + comments.length) % comments.length;
+    renderComment(index);
+  }
+
+  function nextPage() {
+    index = (index + 1) % comments.length;
+    renderComment(index);
+  }
+
+  // Mostrar el primer comentario al cargar
+  document.addEventListener("DOMContentLoaded", () => renderComment(index));
 </script>
 
 
@@ -115,9 +143,9 @@
     <p class="text-[18px] mr-20 mt-3">Aquí podréis ver lo que nuestro clientes han opinado de nuestros servicios</p>
   </div>
   <div class="col-span-3">
-    <div class="md:border-l max-md:border-t border-gray-300 mb-8 md:pl-30 pl-10 md:pr-30 pr-15 mt-5">
-      <p id="commentContent" class="text-[24px] font-bold mt-10 mr-10"></p>
-      <div class="grid grid-cols-5 gap-2 mt-30 mb-5">
+    <div class="md:border-l max-md:border-t border-gray-300 mb-8 md:pl-30 pl-10 md:pr-30 pr-15 mt-14 flex flex-col justify-center">
+      <p id="commentContent" class="text-[24px] font-bold pt-5 mr-10"></p>
+      <div class="grid grid-cols-5 gap-2 mt-10 mb-5">
         <div class="col-span-1">
           <img id="authorImage" src="" alt="" class="h-15 w-15 border-0 rounded-full">
         </div>
@@ -127,14 +155,14 @@
           <p id="authorCountry" class="text-[16px]"></p>
         </div>
         <div class="col-span-1 flex items-center justify-center">
-          <button onclick="previousPage()" id="prevBtn" class="botonbl h-[48px] w-[48px] text-[20px] flex items-center justify-center border-0 rounded-full transition-transform duration-200 hover:scale-150">
+          <button onclick="previousPage()" id="prevBtn" class="botonbl h-[48px] w-[48px] text-[20px] flex items-center justify-center border-0 rounded-full transition-transform duration-200 hover:scale-150 hover:bg-[#767CB5] bg-[#6A6B75]">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
             </svg>
           </button>
         </div>
         <div class="col-span-1 flex items-center justify-center">
-          <button onclick="nextPage()" id="nxtBtn" class="botonbl h-[48px] w-[48px] text-[20px] flex items-center justify-center border-0 rounded-full transition-transform duration-200 hover:scale-150">
+          <button onclick="nextPage()" id="nxtBtn" class="botonbl h-[48px] w-[48px] text-[20px] flex items-center justify-center border-0 rounded-full transition-transform duration-200 hover:scale-150 hover:bg-[#767CB5] bg-[#6A6B75]">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
             </svg>  
