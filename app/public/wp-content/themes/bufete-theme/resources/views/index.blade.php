@@ -76,32 +76,35 @@
 
 {{-- Especializaciones --}}
 <section class="px-6 py-10">
-    <div class="grid grid-cols-1 gap-2 lg:grid-cols-[1fr_auto] items-center mb-3">
-        <div class="flex items-center space-x-2">
-            <h3 class="font-bold text-[25px]">Nuestras especializaciones</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
-            </svg>  
+  <div class="grid grid-cols-1 gap-2 lg:grid-cols-[1fr_auto] items-center mb-3">
+    <div class="flex items-center space-x-2">
+      <h3 class="font-bold text-[25px]">Nuestras especializaciones</h3>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+      </svg>  
+    </div>
+    <a href="#" class="text-[16px] w-[70px] h-[25px]">Ver todo</a>
+  </div>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    @foreach ($categorias as $categoria)
+      @php
+        $image_url = get_field('category-pic', 'term_' . $categoria->term_id);
+      @endphp
+      <div class="h-responsive bg-gray-200 border-0 rounded-[15px] flex flex-col justify-center gap-2">
+        <div class="m-4 flex justify-center">
+          <img src="{{ $image_url }}" alt="{{ $categoria->name }}" class="h-[150px] border-0 rounded-[10px]">
         </div>
-        <a href="#" class="text-[16px] w-[70px] h-[25px]">Ver todo</a>
-    </div>
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        @foreach ($categorias as $categoria)
-            <div class="h-responsive bg-gray-200 border-0 rounded-[15px] flex flex-col justify-center gap-2">
-                <div class="m-4 flex justify-center">
-                    <img src="{{-- {{ get_the_post_thumbnail_url($post->ID) }}" alt="{{ $post->post_title }} --}}" class="h-[150px] border-0 rounded-[10px]">
-                </div>
-                <div class="mr-4 ml-4">
-                    <a href="#" class="text-[18px] font-bold">
-                        {{ $categoria->name }}
-                    </a>
-                </div>
-                <div class="m-4">
-                  {{ $categoria->description }}
-                </div>
-            </div>
-        @endforeach
-    </div>
+        <div class="mr-4 ml-4">
+          <a href="#" class="text-[18px] font-bold">
+            {{ $categoria->name }}
+          </a>
+        </div>
+        <div class="m-4">
+          {{ $categoria->description }}
+        </div>
+      </div>
+    @endforeach
+  </div>
 </section>
 
 {{-- Footer/Pie de página --}}

@@ -85,9 +85,12 @@
     </div>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <?php $__currentLoopData = $categorias; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $categoria): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+          <?php
+            $image_url = get_field('category-pic', 'term_' . $categoria->term_id);
+          ?>
             <div class="h-responsive bg-gray-200 border-0 rounded-[15px] flex flex-col justify-center gap-2">
                 <div class="m-4 flex justify-center">
-                    <img src="" class="h-[150px] border-0 rounded-[10px]">
+                    <img src="<?php echo e($image_url); ?>" alt="<?php echo e($categoria->name); ?>" class="h-[150px] border-0 rounded-[10px]">
                 </div>
                 <div class="mr-4 ml-4">
                     <a href="#" class="text-[18px] font-bold">
