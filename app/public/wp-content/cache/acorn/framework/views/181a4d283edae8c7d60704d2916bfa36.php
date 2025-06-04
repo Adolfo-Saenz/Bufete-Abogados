@@ -81,7 +81,7 @@
         <a href="#">Abogados</a>
         <a href="#">Contáctanos</a>
       </nav>
-      <a href="#" class="h-[50px] w-[150px] bg-white text-[#1e1f36] font-bold rounded-md hover:scale-105 transition-transform duration-200 flex items-center justify-center">
+      <a href="#" class="h-[50px] w-[150px] max-md:w-[130px] bg-white text-[#1e1f36] font-bold rounded-md hover:scale-105 transition-transform duration-200 flex items-center justify-center">
         Área de clientes
       </a>
     </div>
@@ -89,7 +89,7 @@
 </section>
 
 
-<section class="relative lg:h-[600px] h-responsive text-[#232536] flex max-md:grid max-md:grid-rows-3">
+<section class="relative lg:h-[600px] h-responsive text-[#232536] flex max-md:grid max-md:grid-rows-2">
   <div class="bg-[#767CB5] lg:h-[600px] w-3/5 max-md:w-full h-responsive">
     <h1 class="text-[70px] max-sm:text-[55px] leading-22 font-bold lg:pl-12 pl-4 lg:mt-15 mt-10 lg:[width:700px] h-responsive">Contáctanos y cuéntanos como podemos ayudarte</h1>
     <p class="text-[25px] max-sm:text-[20px] leading-6 lg:pl-12 pl-4 pr-4 pt-15 lg:[width:600px] w-full h-responsive">Un bufete de abogados con más de 25 años de experiencia</p>
@@ -174,7 +174,7 @@
 </section>
 
 
-<section class="px-6 py-10 bg-[#232536]">
+<section class="py-10 bg-[#232536]">
   <div class="h-[80px] bg-[#232536] px-5">
     <div class="flex items-center justify-between h-[80px]">
       <div class="flex items-center space-x-4">
@@ -188,7 +188,7 @@
           <a href="#">Abogados</a>
           <a href="#">Contáctanos</a>
         </nav>
-        <a href="#" class="h-[50px] w-[150px] bg-white text-[#1e1f36] font-bold rounded-md hover:scale-105 transition-transform duration-200 flex items-center justify-center">
+        <a href="#" class="h-[50px] w-[150px] max-md:w-[130px] bg-white text-[#1e1f36] font-bold rounded-md hover:scale-105 transition-transform duration-200 flex items-center justify-center">
           Área de clientes
         </a>
       </div>
@@ -197,11 +197,11 @@
 
 
   <?php if(is_user_logged_in()): ?>
-    <div class="mx-2 my-10 bg-[#2A2B39] grid grid-cols-9 items-center p-6 rounded-lg">
-      <p class="ml-10 col-span-4 text-[28px] md:text-[34px] font-bold text-white">
+    <div class="mx-6 my-10 bg-[#2A2B39] grid grid-cols-9 items-center p-6 rounded-lg">
+      <p class="md:ml-10 col-span-4 text-[28px] md:text-[34px] font-bold text-white">
         Escribe tu comentario
       </p>
-      <form action="<?php echo e(site_url('/wp-comments-post.php')); ?>" method="post" class="col-span-5 flex flex-col md:flex-row md:items-center md:space-x-4 space-y-4 md:space-y-0 ml-10 w-full">
+      <form action="<?php echo e(site_url('/wp-comments-post.php')); ?>" method="post" class="col-span-5 flex flex-col md:flex-row md:items-center md:space-x-4 space-y-4 md:space-y-0 ml-10 max-sm:w-[150px] sm:w-[300px] md:w-[372px] lg:w-[500px]">
         
         <input type="hidden" name="comment_post_ID" value="<?php echo e($post_id); ?>">
         <input type="hidden" name="comment_parent" value="0">
@@ -253,7 +253,7 @@
     });
   </script>
 
-  <div class="flex items-center justify-between">
+  <div class="mx-6 flex items-center justify-between">
     <div class="text-[16px] text-gray-400 font-semibold ml-2">
       <p>Finstreet 118 2561 abctown</p>
       <p>example@femail.com  001 21345 442</p>
