@@ -1,3 +1,5 @@
+
+
 <?php
   /* Obtener los últimos 4 posts */
   $latests_posts = get_posts([
@@ -268,7 +270,7 @@
   <?php else: ?>
     <div class="mx-2 my-10 bg-[#2A2B39] p-6 rounded-lg text-white text-center">
       <p class="text-[20px]">Debes iniciar sesión para dejar un comentario.</p>
-      <a href="<?php echo e(wp_login_url("http://bufete-abogados.local/")); ?>" class="inline-block mt-4 px-6 py-3 bg-[#6A6B75] rounded-[10px] font-bold hover:bg-[#767CB5] hover:scale-105 transition-transform duration-200">
+      <a href="<?php echo e("http://bufete-abogados.local/formulario-de-registro/"); ?>" class="inline-block mt-4 px-6 py-3 bg-[#6A6B75] rounded-[10px] font-bold hover:bg-[#767CB5] hover:scale-105 transition-transform duration-200">
         Iniciar sesión
       </a>
     </div>
