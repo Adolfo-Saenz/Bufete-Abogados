@@ -128,7 +128,7 @@ add_action('login_init', 'redirect_wp_login_page_alternative');
 
 // Modificar los roles de perfil.
 function custom_user_roles_setup() {
-    // Elimina roles
+    // Eliminar roles
     remove_role('subscriber');
     remove_role('contributor');
     remove_role('author');
