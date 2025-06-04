@@ -107,6 +107,44 @@
   </div>
 </section>
 
+{{-- Comentarios --}}
+<section class="px-6 py-10 bg-[rgb(35,37,54)] text-white grid md:grid-cols-5">
+  <div class="col-span-2 flex flex-col justify-center md:m-14 m-7">
+    <p class="text-[16px] font-semibold">Comentarios</p>
+    <h4 class="text-[36px] font-bold mt-2">¿Que opinan nuestros clientes sobre nosotros?</h4>
+    <p class="text-[18px] mr-20 mt-3">Aquí podréis ver lo que nuestro clientes han opinado de nuestros servicios</p>
+  </div>
+  <div class="col-span-3">
+    <div class="md:border-l max-md:border-t border-gray-300 mb-8 md:pl-30 pl-10 md:pr-30 pr-15 mt-5">
+      <p id="commentContent" class="text-[24px] font-bold mt-10 mr-10"></p>
+      <div class="grid grid-cols-5 gap-2 mt-30 mb-5">
+        <div class="col-span-1">
+          <img id="authorImage" src="" alt="" class="h-15 w-15 border-0 rounded-full">
+        </div>
+        <div class="col-span-2 flex flex-col justify-center">
+          <p id="commentAuthor" class="font-bold text-[24px]"></p>
+          <p id="authorCity" class="text-[16px]"></p>
+          <p id="authorCountry" class="text-[16px]"></p>
+        </div>
+        <div class="col-span-1 flex items-center justify-center">
+          <button onclick="previousPage()" id="prevBtn" class="botonbl h-[48px] w-[48px] text-[20px] flex items-center justify-center border-0 rounded-full transition-transform duration-200 hover:scale-150">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+            </svg>
+          </button>
+        </div>
+        <div class="col-span-1 flex items-center justify-center">
+          <button onclick="nextPage()" id="nxtBtn" class="botonbl h-[48px] w-[48px] text-[20px] flex items-center justify-center border-0 rounded-full transition-transform duration-200 hover:scale-150">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>  
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{-- Footer/Pie de página --}}
 <section class="px-6 py-10 bg-[#232536]">
   <div class="h-[80px] bg-[#232536] px-5">
