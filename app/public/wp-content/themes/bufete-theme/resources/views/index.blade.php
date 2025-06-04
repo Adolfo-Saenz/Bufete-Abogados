@@ -196,21 +196,43 @@
   </div>
 
 
+  @if (is_user_logged_in())
+    <div class="mx-2 my-10 bg-[#2A2B39] grid grid-cols-9 items-center p-6 rounded-lg">
+      <p class="ml-10 col-span-4 text-[28px] md:text-[34px] font-bold text-white">
+        Escribe tu comentario
+      </p>
+      <form action="{{ site_url('/wp-comments-post.php') }}" method="post" class="col-span-5 flex flex-col md:flex-row md:items-center md:space-x-4 space-y-4 md:space-y-0 ml-10 w-full">
+        {{-- Obligatorio para que el comentario se asocie al post correcto --}}
+        <input type="hidden" name="comment_post_ID" value="{{ $post_id }}">
+        <input type="hidden" name="comment_parent" value="0">
+
+        {{-- Campo de comentario --}}
+        <input 
+          type="text" 
+          name="comment" 
+          required 
+          class="h-[60px] md:w-[400px] px-4 border-0 rounded-[10px] bg-white text-gray-800 text-[16px]" 
+          placeholder="Escribe tu comentario aquí...">
+
+        {{-- Botón de enviar --}}
+        <button type="submit" class="boton text-[16px] md:text-[20px] w-full md:w-[180px] h-[60px] flex items-center justify-center text-white rounded-[10px] font-bold font-sans bg-blue-600 hover:bg-blue-700 transition">
+          Enviar
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 ml-2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  @else
+    <div class="mx-2 my-10 bg-[#2A2B39] p-6 rounded-lg text-white text-center">
+      <p class="text-[20px]">Debes iniciar sesión para dejar un comentario.</p>
+      <a href="{{ wp_login_url(get_permalink()) }}" class="inline-block mt-4 px-6 py-3 bg-blue-600 rounded-[10px] font-bold hover:bg-blue-700 transition">
+        Iniciar sesión
+      </a>
+    </div>
+  @endif
 
 
-
-  <div class="mx-2 my-10 h-[235px] bg-[#2A2B39] grid grid-cols-9 items-center">
-    <p class="ml-10 col-span-4 text-[34px] font-bold text-white">Subscribe to our news letter to get latest updates and news</p>
-    <form action="{{-- {{ $buttonLink }} --}}" class="col-span-5 flex items-center space-x-4 ml-25">
-      <input type="email" name="mail" class="h-[60px] md:w-[280px] border-0 rounded-[10px] bg-white text-gray-500 text-[20px] placeholder:ml-4" placeholder="example@gmail.com">
-      <button type="button" class="boton text-[20px] w-[180px] h-[60px] flex items-center justify-center text-white rounded-[10px] font-bold font-sans">
-        {{-- {{ $buttonText }} --}}
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 rotate-325">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
-        </svg>                                  
-      </button>
-    </form>
-  </div>
   <div class="flex items-center justify-between">
     <div class="text-[16px] text-gray-400 font-semibold ml-2">
       <p>Finstreet 118 2561 abctown</p>
