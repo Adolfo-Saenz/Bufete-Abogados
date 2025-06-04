@@ -1,0 +1,553 @@
+[03-Jun-2025 13:40:52 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(879): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->asset('resources/css/e...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(17): Illuminate\Support\Facades\Facade::__callStatic('asset', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(326): App\{closure}(Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\block-editor.php(663): apply_filters('block_editor_se...', Array, Object(WP_Block_Editor_Context))
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-customize-widgets.php(851): get_block_editor_settings(Array, Object(WP_Block_Editor_Context))
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): WP_Customize_Widgets->enqueue_scripts('')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\customize.php(133): do_action('customize_contr...')
+#11 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[03-Jun-2025 13:40:52 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[03-Jun-2025 13:40:52 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[03-Jun-2025 13:40:55 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(879): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->asset('resources/css/e...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(17): Illuminate\Support\Facades\Facade::__callStatic('asset', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(326): App\{closure}(Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\block-editor.php(663): apply_filters('block_editor_se...', Array, Object(WP_Block_Editor_Context))
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-customize-widgets.php(851): get_block_editor_settings(Array, Object(WP_Block_Editor_Context))
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): WP_Customize_Widgets->enqueue_scripts('')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\customize.php(133): do_action('customize_contr...')
+#11 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[03-Jun-2025 13:40:56 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(879): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->asset('resources/css/e...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(17): Illuminate\Support\Facades\Facade::__callStatic('asset', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(326): App\{closure}(Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\block-editor.php(663): apply_filters('block_editor_se...', Array, Object(WP_Block_Editor_Context))
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-customize-widgets.php(851): get_block_editor_settings(Array, Object(WP_Block_Editor_Context))
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): WP_Customize_Widgets->enqueue_scripts('')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\customize.php(133): do_action('customize_contr...')
+#11 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[03-Jun-2025 13:40:57 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(879): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->asset('resources/css/e...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(17): Illuminate\Support\Facades\Facade::__callStatic('asset', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(326): App\{closure}(Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\block-editor.php(663): apply_filters('block_editor_se...', Array, Object(WP_Block_Editor_Context))
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-customize-widgets.php(851): get_block_editor_settings(Array, Object(WP_Block_Editor_Context))
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): WP_Customize_Widgets->enqueue_scripts('')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\customize.php(133): do_action('customize_contr...')
+#11 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[03-Jun-2025 13:40:58 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(879): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->asset('resources/css/e...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(17): Illuminate\Support\Facades\Facade::__callStatic('asset', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(326): App\{closure}(Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\block-editor.php(663): apply_filters('block_editor_se...', Array, Object(WP_Block_Editor_Context))
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-customize-widgets.php(851): get_block_editor_settings(Array, Object(WP_Block_Editor_Context))
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): WP_Customize_Widgets->enqueue_scripts('')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\customize.php(133): do_action('customize_contr...')
+#11 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[03-Jun-2025 13:40:58 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(879): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->asset('resources/css/e...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(17): Illuminate\Support\Facades\Facade::__callStatic('asset', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(326): App\{closure}(Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\block-editor.php(663): apply_filters('block_editor_se...', Array, Object(WP_Block_Editor_Context))
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-customize-widgets.php(851): get_block_editor_settings(Array, Object(WP_Block_Editor_Context))
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): WP_Customize_Widgets->enqueue_scripts('')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\customize.php(133): do_action('customize_contr...')
+#11 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[03-Jun-2025 13:40:59 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(879): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->asset('resources/css/e...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(17): Illuminate\Support\Facades\Facade::__callStatic('asset', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(326): App\{closure}(Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\block-editor.php(663): apply_filters('block_editor_se...', Array, Object(WP_Block_Editor_Context))
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-customize-widgets.php(851): get_block_editor_settings(Array, Object(WP_Block_Editor_Context))
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): WP_Customize_Widgets->enqueue_scripts('')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\customize.php(133): do_action('customize_contr...')
+#11 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[03-Jun-2025 13:40:59 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(879): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->asset('resources/css/e...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(17): Illuminate\Support\Facades\Facade::__callStatic('asset', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(326): App\{closure}(Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\block-editor.php(663): apply_filters('block_editor_se...', Array, Object(WP_Block_Editor_Context))
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-customize-widgets.php(851): get_block_editor_settings(Array, Object(WP_Block_Editor_Context))
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): WP_Customize_Widgets->enqueue_scripts('')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\customize.php(133): do_action('customize_contr...')
+#11 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[03-Jun-2025 13:40:59 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(879): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->asset('resources/css/e...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(17): Illuminate\Support\Facades\Facade::__callStatic('asset', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(326): App\{closure}(Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\block-editor.php(663): apply_filters('block_editor_se...', Array, Object(WP_Block_Editor_Context))
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-customize-widgets.php(851): get_block_editor_settings(Array, Object(WP_Block_Editor_Context))
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): WP_Customize_Widgets->enqueue_scripts('')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\customize.php(133): do_action('customize_contr...')
+#11 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Undefined variable $title in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 60
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Undefined variable $desc in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 61
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Undefined variable $buttonLink in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 62
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Undefined variable $buttonText in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 63
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Undefined variable $latest_post in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 77
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 77
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Undefined variable $latest_post in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 77
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Attempt to read property "post_title" on null in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 77
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Undefined variable $latest_post in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 81
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 81
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Undefined variable $latest_post in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 82
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 82
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Undefined variable $latest_post in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 85
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Attempt to read property "post_title" on null in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 85
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Undefined variable $latest_post in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 86
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Attempt to read property "post_content" on null in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 86
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Undefined variable $latest_post in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 87
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 87
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  Undefined variable $popular_posts in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 98
+[03-Jun-2025 13:58:21 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 98
+[03-Jun-2025 13:58:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function reading_time() in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:151
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Call to undefined function reading_time() (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\index.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:151
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 151
+[03-Jun-2025 14:04:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function reading_time() in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:104
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Call to undefined function reading_time() (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\index.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:104
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 104
+[03-Jun-2025 14:04:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function reading_time() in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:104
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Call to undefined function reading_time() (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\index.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:104
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 104
+[03-Jun-2025 14:04:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function reading_time() in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:104
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Call to undefined function reading_time() (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\index.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:104
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 104
+[03-Jun-2025 15:46:32 UTC] PHP Warning:  Undefined variable $post in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 90
+[03-Jun-2025 15:46:32 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 90
+[03-Jun-2025 15:46:32 UTC] PHP Warning:  Undefined variable $post in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 90
+[03-Jun-2025 15:46:32 UTC] PHP Warning:  Attempt to read property "post_title" on null in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 90
+[03-Jun-2025 15:46:32 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Term as array in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Cannot use object of type WP_Term as array (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\index.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 94
+[03-Jun-2025 15:48:05 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Term as array in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Cannot use object of type WP_Term as array (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\index.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 94
+[03-Jun-2025 15:48:07 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Term as array in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Cannot use object of type WP_Term as array (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\index.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 94
+[03-Jun-2025 15:48:11 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Term as array in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Cannot use object of type WP_Term as array (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\index.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 94
+[03-Jun-2025 15:48:12 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Term as array in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Cannot use object of type WP_Term as array (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\index.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 94
+[03-Jun-2025 15:48:13 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Term as array in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Cannot use object of type WP_Term as array (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\index.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 94
+[03-Jun-2025 15:49:13 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Term as array in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Cannot use object of type WP_Term as array (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\index.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 94
+[03-Jun-2025 15:49:31 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Term as array in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Cannot use object of type WP_Term as array (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\index.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 94
+[03-Jun-2025 15:49:32 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Term as array in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Cannot use object of type WP_Term as array (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\index.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 94
+[03-Jun-2025 15:49:34 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Term as array in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Cannot use object of type WP_Term as array (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\index.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php:94
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 94

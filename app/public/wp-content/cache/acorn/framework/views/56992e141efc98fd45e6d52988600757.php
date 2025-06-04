@@ -1,0 +1,2 @@
+<?php (dynamic_sidebar('sidebar-primary')); ?>
+<?php /**PATH C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views/sections/sidebar.blade.php ENDPATH**/ ?>
