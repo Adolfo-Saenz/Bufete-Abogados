@@ -124,3 +124,33 @@ function redirect_wp_login_page_alternative() {
     }
 }
 add_action('login_init', 'redirect_wp_login_page_alternative');
+
+
+// Modificar los roles de perfil.
+function custom_user_roles_setup() {
+    // Eliminar roles
+    remove_role('subscriber');
+    remove_role('contributor');
+    remove_role('author');
+    remove_role('editor');
+
+    // Agrega "Cliente"
+    add_role(
+        'cliente',
+        'Cliente',
+        [
+            'read' => true,
+        ]
+    );
+
+    // Agrega "Abogado"
+    add_role(
+        'abogado',
+        'Abogado',
+        [
+            'read' => true,
+            'edit_posts' => true,
+        ]
+    );
+}
+add_action('init', 'custom_user_roles_setup');
