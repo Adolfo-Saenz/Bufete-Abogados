@@ -218,7 +218,7 @@
           placeholder="Escribe tu comentario aquí...">
 
         {{-- Botón de enviar --}}
-        <button type="submit" class="boton text-[16px] md:text-[20px] w-full md:w-[180px] h-[60px] flex items-center justify-center text-white rounded-[10px] font-bold font-sans bg-blue-600 hover:bg-blue-700 transition">
+        <button type="submit" class="boton text-[16px] md:text-[20px] w-full md:w-[180px] h-[60px] flex items-center justify-center text-white rounded-[10px] font-bold font-sans bg-[#6A6B75] hover:bg-[#767CB5] hover:scale-105 transition-transform duration-200">
           Enviar
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 ml-2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
@@ -259,7 +259,7 @@
       <p>example@femail.com  001 21345 442</p>
     </div>
     <div>
-      <img src="{{ Vite::asset('resources/images/Social_wrapper.png') }}" alt="Redes sociales">
+      <img src="{{-- {{ Vite::asset('resources/images/Social_wrapper.png') }} --}}" alt="{{-- Redes sociales --}}">
     </div>
   </div>
 </section>
