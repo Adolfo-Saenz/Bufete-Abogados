@@ -551,3 +551,100 @@ Stack trace:
 #8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
 #9 {main}
   thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 94
+[04-Jun-2025 11:18:39 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(897): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->content('editor.deps.jso...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(36): Illuminate\Support\Facades\Facade::__callStatic('content', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): App\{closure}('')
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\admin-header.php(168): do_action('admin_head')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\edit-form-blocks.php(376): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\post-new.php(72): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[04-Jun-2025 11:18:53 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(897): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->content('editor.deps.jso...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(36): Illuminate\Support\Facades\Facade::__callStatic('content', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): App\{closure}('')
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\admin-header.php(168): do_action('admin_head')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\edit-form-blocks.php(376): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\post-new.php(72): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[04-Jun-2025 11:18:55 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(897): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->content('editor.deps.jso...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(36): Illuminate\Support\Facades\Facade::__callStatic('content', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): App\{closure}('')
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\admin-header.php(168): do_action('admin_head')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\edit-form-blocks.php(376): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\post-new.php(72): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[04-Jun-2025 11:19:00 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(897): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->content('editor.deps.jso...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(36): Illuminate\Support\Facades\Facade::__callStatic('content', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): App\{closure}('')
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\admin-header.php(168): do_action('admin_head')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\edit-form-blocks.php(376): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\post-new.php(72): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[04-Jun-2025 11:19:02 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(897): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->content('editor.deps.jso...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(36): Illuminate\Support\Facades\Facade::__callStatic('content', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): App\{closure}('')
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\admin-header.php(168): do_action('admin_head')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\edit-form-blocks.php(376): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\post-new.php(72): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[04-Jun-2025 11:19:03 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(897): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->content('editor.deps.jso...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(36): Illuminate\Support\Facades\Facade::__callStatic('content', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): App\{closure}('')
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\admin-header.php(168): do_action('admin_head')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\edit-form-blocks.php(376): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\post-new.php(72): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[04-Jun-2025 11:19:06 UTC] PHP Fatal error:  Uncaught Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public/wp-content/themes/bufete-theme\public\build/manifest.json in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php:934
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php(897): Illuminate\Foundation\Vite->manifest('build')
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\Facades\Facade.php(361): Illuminate\Foundation\Vite->content('editor.deps.jso...')
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\app\setup.php(36): Illuminate\Support\Facades\Facade::__callStatic('content', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(324): App\{closure}('')
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\admin-header.php(168): do_action('admin_head')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\edit-form-blocks.php(376): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-admin\post-new.php(72): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\roots\acorn\src\Illuminate\Foundation\Vite.php on line 934
+[04-Jun-2025 11:27:59 UTC] PHP Warning:  Undefined array key "login" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\dad811d276fe03fcfc26e1a45a0b4b8d.php on line 11
+[04-Jun-2025 11:31:59 UTC] PHP Warning:  Undefined array key "login" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\dad811d276fe03fcfc26e1a45a0b4b8d.php on line 11
+[04-Jun-2025 11:33:58 UTC] PHP Warning:  Undefined array key "login" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\dad811d276fe03fcfc26e1a45a0b4b8d.php on line 11
+[04-Jun-2025 11:35:37 UTC] PHP Warning:  Undefined array key "login" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\dad811d276fe03fcfc26e1a45a0b4b8d.php on line 11
+[04-Jun-2025 11:37:06 UTC] PHP Warning:  Undefined array key "login" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\dad811d276fe03fcfc26e1a45a0b4b8d.php on line 11
+[04-Jun-2025 11:37:16 UTC] PHP Warning:  Undefined array key "login" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\dad811d276fe03fcfc26e1a45a0b4b8d.php on line 11

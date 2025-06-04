@@ -102,7 +102,7 @@
           </li>
         </ul>
       </nav>
-      <a href="{{ is_user_logged_in() ? '#' : wp_login_url("http://bufete-abogados.local/") }}" class="h-[50px] w-[150px] max-md:w-[130px] bg-white text-[#1e1f36] font-bold rounded-md hover:scale-105 transition-transform duration-200 flex items-center justify-center">
+      <a href="{{ is_user_logged_in() ? '#' : "http://bufete-abogados.local/formulario-de-registro/" }}" class="h-[50px] w-[150px] max-md:w-[130px] bg-white text-[#1e1f36] font-bold rounded-md hover:scale-105 transition-transform duration-200 flex items-center justify-center">
         Área de clientes
       </a>
     </div>
@@ -114,7 +114,7 @@
   <div class="bg-[#767CB5] lg:h-[600px] w-3/5 max-md:w-full h-responsive">
     <h1 class="text-[70px] max-sm:text-[55px] leading-22 font-bold lg:pl-12 pl-4 lg:mt-15 mt-10 lg:[width:700px] h-responsive">Contáctanos y cuéntanos como podemos ayudarte</h1>
     <p class="text-[25px] max-sm:text-[20px] leading-6 lg:pl-12 pl-4 pr-4 pt-15 lg:[width:600px] w-full h-responsive">Un bufete de abogados con más de 25 años de experiencia</p>
-    <a href="{{ is_user_logged_in() ? '#' : wp_login_url("http://bufete-abogados.local/") }}" class="boton text-[20px] lg:ml-12 ml-4 mt-15 lg:mb-0 mb-7 [width:186px] [height:65px] flex items-center justify-center bg-white text-[#232536] rounded-[10px] font-bold font-sans hover:scale-105 transition-transform duration-200">
+    <a href="{{ is_user_logged_in() ? '#' : "http://bufete-abogados.local/formulario-de-registro/" }}" class="boton text-[20px] lg:ml-12 ml-4 mt-15 lg:mb-0 mb-7 [width:186px] [height:65px] flex items-center justify-center bg-white text-[#232536] rounded-[10px] font-bold font-sans hover:scale-105 transition-transform duration-200">
       Área de clientes
     </a>
   </div>
@@ -227,7 +227,7 @@
         </ul>
       </nav>
 
-      <a href="{{ is_user_logged_in() ? '#' : wp_login_url("http://bufete-abogados.local/") }}" class="h-[50px] w-[150px] max-md:w-[130px] bg-white text-[#1e1f36] font-bold rounded-md hover:scale-105 transition-transform duration-200 flex items-center justify-center">
+      <a href="{{ is_user_logged_in() ? '#' : "http://bufete-abogados.local/formulario-de-registro/" }}" class="h-[50px] w-[150px] max-md:w-[130px] bg-white text-[#1e1f36] font-bold rounded-md hover:scale-105 transition-transform duration-200 flex items-center justify-center">
         Área de clientes
       </a>
     </div>
@@ -268,7 +268,7 @@
   @else
     <div class="mx-2 my-10 bg-[#2A2B39] p-6 rounded-lg text-white text-center">
       <p class="text-[20px]">Debes iniciar sesión para dejar un comentario.</p>
-      <a href="{{ wp_login_url("http://bufete-abogados.local/") }}" class="inline-block mt-4 px-6 py-3 bg-[#6A6B75] rounded-[10px] font-bold hover:bg-[#767CB5] hover:scale-105 transition-transform duration-200">
+      <a href="{{ "http://bufete-abogados.local/formulario-de-registro/" }}" class="inline-block mt-4 px-6 py-3 bg-[#6A6B75] rounded-[10px] font-bold hover:bg-[#767CB5] hover:scale-105 transition-transform duration-200">
         Iniciar sesión
       </a>
     </div>
