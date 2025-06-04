@@ -206,6 +206,9 @@
         <input type="hidden" name="comment_post_ID" value="{{ $post_id }}">
         <input type="hidden" name="comment_parent" value="0">
 
+        {{-- Mantenerse en la misma página después de comentar --}}
+        <input type="hidden" name="redirect_to" value="{{ get_permalink() }}">
+
         {{-- Campo de comentario --}}
         <input 
           type="text" 
@@ -232,6 +235,23 @@
     </div>
   @endif
 
+  {{-- Script para evitar redireccionamiento a página de comentarios --}}
+  <script>
+    document.querySelector('form').addEventListener('submit', function(e){
+      // Permitir que el formulario se envíe normalmente, pero evitar el redireccionamiento al recargar la página
+      e.preventDefault();
+
+      // Enviar el formulario manualmente
+      fetch(this.action, {
+        method: 'POST',
+        body: new FormData(this),
+        credentials: 'same-origin'
+      }).then(() => {
+        // Recargar la misma página para que se refresquen los comentarios
+        window.location.href = window.location.href.split('#')[0];
+      });
+    });
+  </script>
 
   <div class="flex items-center justify-between">
     <div class="text-[16px] text-gray-400 font-semibold ml-2">
