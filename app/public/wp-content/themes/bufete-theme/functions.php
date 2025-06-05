@@ -192,3 +192,139 @@ function registrar_cpt_casos() {
     register_post_type('caso', $args);
 }
 add_action('init', 'registrar_cpt_casos');
+
+function columnas_personalizadas_casos($columns) {
+    $nuevas_columnas = [];
+
+    $nuevas_columnas['cb'] = $columns['cb'];
+    $nuevas_columnas['title'] = $columns['title'];
+    $nuevas_columnas['acf_desc'] = 'Descripción';
+    $nuevas_columnas['acf_client'] = 'Cliente';
+    $nuevas_columnas['acf_lawyers'] = 'Abogados';
+
+    foreach ($columns as $key => $value) {
+        if (!isset($nuevas_columnas[$key])) {
+            $nuevas_columnas[$key] = $value;
+        }
+    }
+
+    return $nuevas_columnas;
+}
+add_filter('manage_caso_posts_columns', 'columnas_personalizadas_casos');
+
+function contenido_columna_personalizada_casos($column, $post_id) {
+    if ($column === 'acf_desc') {
+        $desc = get_field('desc', $post_id);
+        echo $desc ? esc_html($desc) : '—';
+    }
+
+    if ($column === 'acf_client') {
+        $client_id = get_field('client', $post_id);
+        if ($client_id) {
+            $user = get_userdata($client_id);
+            echo $user ? esc_html($user->display_name) : '[Usuario no encontrado]';
+        } else {
+            echo '—';
+        }
+    }
+
+    if ($column === 'acf_lawyers') {
+        if (have_rows('lawyers', $post_id)) {
+            $nombres = [];
+
+            while (have_rows('lawyers', $post_id)) {
+                the_row();
+                $lawyer_id = get_sub_field('lawyer');
+
+                if ($lawyer_id) {
+                    $user = get_userdata($lawyer_id);
+                    $nombres[] = $user ? $user->display_name : '[Desconocido]';
+                }
+            }
+
+            echo !empty($nombres) ? esc_html(implode(', ', $nombres)) : '—';
+        } else {
+            echo '—';
+        }
+    }
+}
+add_action('manage_caso_posts_custom_column', 'contenido_columna_personalizada_casos', 10, 2);
+
+
+// Mostrar filtros en la tabla de administración de "casos"
+function filtros_por_cliente_y_abogado_en_casos($post_type) {
+    if ($post_type !== 'caso') {
+        return;
+    }
+
+    // Filtro de clientes
+    $clientes = get_users(['role__in' => ['cliente', 'subscriber'], 'orderby' => 'display_name']);
+    echo '<select name="filtro_cliente">';
+    echo '<option value="">Todos los clientes</option>';
+    foreach ($clientes as $cliente) {
+        $selected = isset($_GET['filtro_cliente']) && $_GET['filtro_cliente'] == $cliente->ID ? 'selected' : '';
+        echo '<option value="' . esc_attr($cliente->ID) . '" ' . $selected . '>' . esc_html($cliente->display_name) . '</option>';
+    }
+    echo '</select>';
+
+    // Filtro de abogados
+    $abogados = get_users(['role__in' => ['abogado', 'editor', 'administrator'], 'orderby' => 'display_name']);
+    echo '<select name="filtro_abogado">';
+    echo '<option value="">Todos los abogados</option>';
+    foreach ($abogados as $abogado) {
+        $selected = isset($_GET['filtro_abogado']) && $_GET['filtro_abogado'] == $abogado->ID ? 'selected' : '';
+        echo '<option value="' . esc_attr($abogado->ID) . '" ' . $selected . '>' . esc_html($abogado->display_name) . '</option>';
+    }
+    echo '</select>';
+}
+add_action('restrict_manage_posts', 'filtros_por_cliente_y_abogado_en_casos');
+
+// Aplicar filtro por cliente
+function filtrar_casos_por_cliente($query) {
+    global $pagenow;
+
+    if (
+        is_admin() &&
+        $pagenow === 'edit.php' &&
+        isset($_GET['post_type']) && $_GET['post_type'] === 'caso' &&
+        $query->is_main_query()
+    ) {
+        if (!empty($_GET['filtro_cliente'])) {
+            $cliente_id = intval($_GET['filtro_cliente']);
+            $query->set('meta_query', [[
+                'key' => 'client',
+                'value' => $cliente_id,
+                'compare' => '='
+            ]]);
+        }
+    }
+}
+add_action('pre_get_posts', 'filtrar_casos_por_cliente');
+
+// Aplicar filtro por abogado dentro de repetidor (con SQL personalizado)
+function filtrar_por_abogado_en_repetidor($where, $query) {
+    global $wpdb;
+
+    if (
+        is_admin() &&
+        $query->is_main_query() &&
+        isset($_GET['post_type']) && $_GET['post_type'] === 'caso' &&
+        !empty($_GET['filtro_abogado'])
+    ) {
+        $abogado_id = intval($_GET['filtro_abogado']);
+        // Asegura que la tabla postmeta esté correctamente unida
+        $where .= $wpdb->prepare(
+            " AND EXISTS (
+                SELECT 1 FROM {$wpdb->postmeta} pm
+                WHERE pm.post_id = {$wpdb->posts}.ID
+                AND pm.meta_key LIKE %s
+                AND pm.meta_value = %d
+            )",
+            'lawyers_%_lawyer',
+            $abogado_id
+        );
+    }
+
+    return $where;
+}
+add_filter('posts_where', 'filtrar_por_abogado_en_repetidor', 10, 2);
