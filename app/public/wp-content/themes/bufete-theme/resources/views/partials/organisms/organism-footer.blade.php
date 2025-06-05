@@ -1,4 +1,9 @@
 {{-- Footer/Pie de página --}}
+
+@php
+    $post_id = get_the_ID();
+@endphp
+
 <section class="py-10 bg-[#232536]">
     @include('partials.organisms.organism-header')
 

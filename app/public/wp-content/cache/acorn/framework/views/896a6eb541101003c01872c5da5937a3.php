@@ -1,4 +1,9 @@
 
+
+<?php
+    $post_id = get_the_ID();
+?>
+
 <section class="py-10 bg-[#232536]">
     <?php echo $__env->make('partials.organisms.organism-header', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 
