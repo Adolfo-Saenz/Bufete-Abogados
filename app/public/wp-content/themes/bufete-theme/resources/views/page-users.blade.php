@@ -101,7 +101,7 @@
                     <p><strong>Abogado(s):</strong> {{ implode(', ', $lawyers_names) ?: 'Sin abogado asignado' }}</p>
                 </div>
                 <div class="m-4">
-                    <a href="{{ get_permalink($caso->ID) }}" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+                    <a href="{{ get_permalink($caso->ID) }}" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
                         Leer caso
                     </a>
                 </div>
