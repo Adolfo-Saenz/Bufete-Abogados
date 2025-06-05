@@ -13,13 +13,6 @@
     $city = get_field('city', 'user_' . $user_id);
     $country = get_field('country', 'user_' . $user_id);
     $profile_image = get_field('profile-image', 'user_' . $user_id);
-
-    $args = [
-    'post_type' => 'caso',
-    'posts_per_page' => -1,
-    ];
-
-    $query = new WP_Query($args);
 @endphp
 
 {{-- Header --}}
@@ -56,59 +49,9 @@
 </section>
 
 {{-- Casos --}}
-<section class="px-6 py-10">
-    <div class="grid grid-cols-1 gap-2 lg:grid-cols-[1fr_auto] items-center mb-3">
-        <div class="flex items-center space-x-2">
-            <h3 class="font-bold text-[25px]">Casos</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
-            </svg>  
-        </div>
-        <a href="#" class="text-[16px] w-[70px] h-[25px]">Ver todos</a>
-    </div>
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        @foreach ($query->posts as $caso)
-            @php
-                $tipo_caso_id = get_field('type', $caso->ID);
-                $image_url = $tipo_caso_id ? get_field('category-pic', 'term_' . $tipo_caso_id) : null;
-
-                $client_id = get_field('client', $caso->ID);
-                $client_user = get_userdata($client_id);
-                $client_name = $client_user ? $client_user->display_name : 'Cliente desconocido';
-
-                $lawyers = get_field('lawyers', $caso->ID);
-                $lawyers_names = [];
-
-                if ($lawyers) {
-                    foreach ($lawyers as $lawyer) {
-                        if (isset($lawyer['lawyer'])) {
-                            $lawyer_user = get_userdata($lawyer['lawyer']);
-                            if ($lawyer_user) {
-                                $lawyers_names[] = $lawyer_user->display_name;
-                            }
-                        }
-                    }
-                }
-            @endphp
-
-            <div class="h-responsive bg-gray-200 border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6">
-                <div class="m-4 flex justify-center">
-                    <img src="{{ $image_url }}" alt="Imagen tipo caso" class="h-[150px] border-0 rounded-[10px] object-cover">
-                </div>
-                <div class="mr-4 ml-4">
-                    <h3 class="text-[18px] font-bold mb-1">{{ $caso->post_title }}</h3>
-                    <p><strong>Cliente:</strong> {{ $client_name }}</p>
-                    <p><strong>Abogado(s):</strong> {{ implode(', ', $lawyers_names) ?: 'Sin abogado asignado' }}</p>
-                </div>
-                <div class="m-4">
-                    <a href="{{ get_permalink($caso->ID) }}" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
-                        Leer caso
-                    </a>
-                </div>
-            </div>
-        @endforeach
-    </div>
-</section>
+@include('partials.organisms.organism-cards', [
+    'tipo' => 'Case'
+])
 
 {{-- Footer/Pie de página --}}
 @include('partials.organisms.organism-footer')
