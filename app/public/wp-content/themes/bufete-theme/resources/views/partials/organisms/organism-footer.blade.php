@@ -6,7 +6,7 @@
     @if (is_user_logged_in())
         <div class="mx-6 my-10 bg-[#2A2B39] grid grid-cols-9 items-center p-6 rounded-lg">
             <p class="md:ml-10 col-span-4 text-[28px] md:text-[34px] font-bold text-white">
-                Escribe tu comentario
+                Escribe tu comentario.
             </p>
             <form action="{{ site_url('/wp-comments-post.php') }}" method="post" class="col-span-5 flex flex-col md:flex-row md:items-center md:space-x-4 space-y-4 md:space-y-0 ml-10 max-sm:w-[150px] sm:w-[300px] md:w-[372px] lg:w-[500px]">
                 {{-- Obligatorio para que el comentario se asocie al post correcto --}}
