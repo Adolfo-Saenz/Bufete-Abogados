@@ -760,3 +760,138 @@ Stack trace:
 [05-Jun-2025 09:43:38 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
 [05-Jun-2025 09:44:00 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
 [05-Jun-2025 09:44:31 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 09:54:49 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 09:55:32 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 09:56:50 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 10:25:57 UTC] PHP Warning:  Undefined variable $categorias in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 63
+[05-Jun-2025 10:25:57 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 63
+[05-Jun-2025 10:25:57 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 10:26:18 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 10:26:29 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 10:26:32 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 10:26:41 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 10:44:44 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected token ">" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php:89
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#10 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected token ">" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\page-users.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php:89
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ParseError), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 89
+[05-Jun-2025 10:45:30 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected token ">" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php:90
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#10 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected token ">" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\page-users.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php:90
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ParseError), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 90
+[05-Jun-2025 10:45:40 UTC] PHP Warning:  Undefined array key 0 in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\class-wp-query.php on line 3733
+[05-Jun-2025 10:47:06 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 15
+[05-Jun-2025 10:47:08 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 15
+[05-Jun-2025 10:50:05 UTC] PHP Warning:  Undefined variable $categorias in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 83
+[05-Jun-2025 10:50:05 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 83
+[05-Jun-2025 10:50:05 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 10:57:09 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 10:58:25 UTC] PHP Warning:  Undefined variable $casos_query in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 70
+[05-Jun-2025 10:58:25 UTC] PHP Warning:  Attempt to read property "posts" on null in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 70
+[05-Jun-2025 10:58:25 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 70
+[05-Jun-2025 10:58:25 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 10:58:33 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 11:05:36 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Error as array in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php:73
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Cannot use object of type WP_Error as array (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\page-users.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php:73
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 73
+[05-Jun-2025 11:05:37 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Error as array in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php:73
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#11 {main}
+
+Next Illuminate\View\ViewException: Cannot use object of type WP_Error as array (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\page-users.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php:73
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Error), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 73
+[05-Jun-2025 11:09:50 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 11:10:21 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
+[05-Jun-2025 11:14:57 UTC] PHP Warning:  Undefined variable $post_id in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\896a6eb541101003c01872c5da5937a3.php on line 13
