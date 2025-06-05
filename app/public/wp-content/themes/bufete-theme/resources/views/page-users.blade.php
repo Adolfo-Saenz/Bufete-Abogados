@@ -32,8 +32,17 @@
                     {{ $user_name }}
                 </p>
                 <p class="text-[25px] max-sm:text-[20px] leading-6 lg:pl-12 px-4 lg:[width:600px] w-full h-responsive">
-                    {{ $city }}, 
-                    {{ $country }}
+                    @if ($city != "")
+                        @if($country != "")
+                            {{ $city }}, {{ $country }}
+                        @endif
+                        {{ $city }}, Pais no registrado
+                    @else
+                        @if($country != "")
+                            Ciudad no registrada, {{ $country }}
+                        @endif
+                        No hay datos de localidades
+                    @endif
                 </p>
                 <a href="{{ "#" }}" class="boton text-[20px] lg:ml-12 mt-10 lg:mb-0 mb-7 [width:186px] [height:65px] flex items-center justify-center bg-white text-[#232536] rounded-[10px] font-bold font-sans hover:scale-105 transition-transform duration-200">
                     Editar perfil
