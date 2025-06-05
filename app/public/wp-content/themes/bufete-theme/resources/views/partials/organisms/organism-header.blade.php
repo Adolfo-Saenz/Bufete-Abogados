@@ -31,7 +31,7 @@
                     </li>
                 </ul>
             </nav>
-            <a href="{{ is_user_logged_in() ? '#' : "http://bufete-abogados.local/formulario-de-registro/" }}" class="h-[50px] w-[150px] max-md:w-[130px] bg-white text-[#1e1f36] font-bold rounded-md hover:scale-105 transition-transform duration-200 flex items-center justify-center">
+            <a href="{{ is_user_logged_in() ? 'http://bufete-abogados.local/users-page/' : "http://bufete-abogados.local/formulario-de-registro/" }}" class="h-[50px] w-[150px] max-md:w-[130px] bg-white text-[#1e1f36] font-bold rounded-md hover:scale-105 transition-transform duration-200 flex items-center justify-center">
                 Área de clientes
             </a>
         </div>
