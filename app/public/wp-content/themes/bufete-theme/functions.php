@@ -106,10 +106,12 @@ add_action('init', function () {
   exit;
 });
 
-if (defined('WP_ENV') && WP_ENV === 'development') {
-    $whoops = new \Whoops\Run;
-    $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
-    $whoops->register();
+if (defined('WP_DEBUG') && WP_DEBUG) {
+    add_action('after_setup_theme', function () {
+        $whoops = new \Whoops\Run;
+        $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+        $whoops->register();
+    });
 }
 
 function redirect_wp_login_page_alternative() {

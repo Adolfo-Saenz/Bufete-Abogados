@@ -153,3 +153,11 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer',
     ] + $config);
 });
+
+if (defined('WP_DEBUG') && WP_DEBUG) {
+    add_action('after_setup_theme', function () {
+        $whoops = new \Whoops\Run;
+        $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+        $whoops->register();
+    });
+}
