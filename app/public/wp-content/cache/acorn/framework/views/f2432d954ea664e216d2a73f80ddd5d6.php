@@ -27,7 +27,7 @@
             <?php endif; ?>
             <div class="max-lg:flex max-lg:flex-col max-lg:items-center max-lg:text-center">
                 <p class="max-sm:text-[40px] text-[50px] leading-22 font-bold h-responsive lg:pl-12 max-lg:px-4">
-                    <?php echo e($user_name); ?>
+                    <?php echo e(Str::limit($user_name, limit: 12)); ?>
 
                 </p>
                 <p class="text-[25px] max-sm:text-[20px] leading-6 lg:pl-12 px-4 lg:[width:600px] w-full h-responsive">
