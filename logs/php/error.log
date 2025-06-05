@@ -1385,3 +1385,233 @@ Stack trace:
 #8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
 #9 {main}
   thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 40
+[05-Jun-2025 13:53:10 UTC] PHP Warning:  Undefined array key 0 in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 9
+[05-Jun-2025 13:55:52 UTC] PHP Warning:  Undefined array key 0 in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 9
+[05-Jun-2025 13:55:55 UTC] PHP Warning:  Undefined array key 0 in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 9
+[05-Jun-2025 13:56:00 UTC] PHP Warning:  Undefined array key 0 in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 9
+[05-Jun-2025 14:04:35 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected token ")" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:92
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php(66): Illuminate\View\View->render()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#13 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#14 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#15 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#16 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#17 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#18 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected token ")" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:92
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ParseError), 2)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php(66): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#13 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#14 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#15 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#16 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#17 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected token ")" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:92
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Illuminate\View\ViewException), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 92
+[05-Jun-2025 14:04:41 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected token ")" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:92
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php(66): Illuminate\View\View->render()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#13 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#14 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#15 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#16 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#17 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#18 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected token ")" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:92
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ParseError), 2)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php(66): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#13 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#14 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#15 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#16 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#17 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected token ")" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:92
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Illuminate\View\ViewException), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 92
+[05-Jun-2025 14:05:14 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected token ")" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:92
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php(66): Illuminate\View\View->render()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#13 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#14 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#15 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#16 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#17 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#18 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected token ")" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:92
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ParseError), 2)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php(66): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#13 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#14 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#15 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#16 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#17 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected token ")" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:92
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Illuminate\View\ViewException), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 92
+[05-Jun-2025 14:05:32 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected token ")" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:91
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php(66): Illuminate\View\View->render()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#13 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#14 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#15 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#16 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#17 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#18 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected token ")" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:91
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ParseError), 2)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php(66): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#13 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#14 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#15 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#16 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#17 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected token ")" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:91
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Illuminate\View\ViewException), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 91
+[05-Jun-2025 14:05:58 UTC] PHP Warning:  Undefined array key "lawyer" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 79
+[05-Jun-2025 14:07:34 UTC] PHP Warning:  Attempt to read property "lawyer" on array in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 80

@@ -6,7 +6,7 @@
     $user = wp_get_current_user();
     $user_id = $user->ID;
     $user_name = $user->user_nicename;
-    $role = $user->roles[0];
+    $role = $user->roles;
 
     $city = get_field('city', 'user_' . $user_id);
     $country = get_field('country', 'user_' . $user_id);

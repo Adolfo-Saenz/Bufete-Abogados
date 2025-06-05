@@ -12,6 +12,9 @@
     ];
 
     $query = new WP_Query($args);
+
+    $user = wp_get_current_user();
+    $user_id = $user->ID;
 ?>
 
 <?php if($tipo == "Espec"): ?>
@@ -85,22 +88,23 @@
                         }
                     }
                 ?>
-
-                <div class="h-responsive bg-gray-200 border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6">
-                    <div class="m-4 flex justify-center">
-                        <img src="<?php echo e($image_url); ?>" alt="Imagen tipo caso" class="h-[150px] border-0 rounded-[10px] object-cover">
+                <?php if($client_id == $user_id || $lawyers[0] == $user_id): ?>
+                    <div class="h-responsive bg-gray-200 border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6">
+                        <div class="m-4 flex justify-center">
+                            <img src="<?php echo e($image_url); ?>" alt="Imagen tipo caso" class="h-[150px] border-0 rounded-[10px] object-cover">
+                        </div>
+                        <div class="mr-4 ml-4">
+                            <h3 class="text-[18px] font-bold mb-1"><?php echo e($caso->post_title); ?></h3>
+                            <p><strong>Cliente:</strong> <?php echo e($client_name); ?></p>
+                            <p><strong>Abogado(s):</strong> <?php echo e(implode(', ', $lawyers_names) ?: 'Sin abogado asignado'); ?></p>
+                        </div>
+                        <div class="m-4">
+                            <a href="<?php echo e($caso->guid); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
+                                Leer caso
+                            </a>
+                        </div>
                     </div>
-                    <div class="mr-4 ml-4">
-                        <h3 class="text-[18px] font-bold mb-1"><?php echo e($caso->post_title); ?></h3>
-                        <p><strong>Cliente:</strong> <?php echo e($client_name); ?></p>
-                        <p><strong>Abogado(s):</strong> <?php echo e(implode(', ', $lawyers_names) ?: 'Sin abogado asignado'); ?></p>
-                    </div>
-                    <div class="m-4">
-                        <a href="<?php echo e($caso->guid); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
-                            Leer caso
-                        </a>
-                    </div>
-                </div>
+                <?php endif; ?> 
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
     </section>
