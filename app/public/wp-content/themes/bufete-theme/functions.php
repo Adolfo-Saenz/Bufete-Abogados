@@ -154,3 +154,41 @@ function custom_user_roles_setup() {
     );
 }
 add_action('init', 'custom_user_roles_setup');
+
+//CPT de casos
+function registrar_cpt_casos() {
+    $labels = array(
+        'name'                  => 'Casos',
+        'singular_name'         => 'Caso',
+        'menu_name'             => 'Casos',
+        'name_admin_bar'        => 'Caso',
+        'add_new'               => 'Añadir nuevo',
+        'add_new_item'          => 'Añadir nuevo caso',
+        'new_item'              => 'Nuevo caso',
+        'edit_item'             => 'Editar caso',
+        'view_item'             => 'Ver caso',
+        'all_items'             => 'Todos los casos',
+        'search_items'          => 'Buscar casos',
+        'not_found'             => 'No se encontraron casos.',
+        'not_found_in_trash'    => 'No hay casos en la papelera.',
+        'archives'              => 'Archivo de casos',
+        'insert_into_item'      => 'Insertar en caso',
+        'uploaded_to_this_item' => 'Subido a este caso',
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'show_in_menu'       => true,
+        'menu_position'      => 5,
+        'menu_icon'          => 'dashicons-portfolio',
+        'supports'           => array('title', 'editor', 'author', 'custom-fields'),
+        'has_archive'        => true,
+        'rewrite'            => array('slug' => 'casos'),
+        'capability_type'    => 'post',
+        'show_in_rest'       => true,
+    );
+
+    register_post_type('caso', $args);
+}
+add_action('init', 'registrar_cpt_casos');
