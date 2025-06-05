@@ -35,14 +35,14 @@
                         <?php if($country != ""): ?>
                             <?php echo e($city); ?>, <?php echo e($country); ?>
 
+                        <?php else: ?>
+                            <?php echo e($city); ?>, Pais no registrado
                         <?php endif; ?>
-                        <?php echo e($city); ?>, Pais no registrado
                     <?php else: ?>
                         <?php if($country != ""): ?>
                             Ciudad no registrada, <?php echo e($country); ?>
 
-                        <?php endif; ?>
-                        <?php if($country == "" && $city == ""): ?>
+                        <?php elseif($country == "" && $city == ""): ?>
                             No hay datos de localidades
                         <?php endif; ?>
                     <?php endif; ?>

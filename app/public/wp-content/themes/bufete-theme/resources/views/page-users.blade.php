@@ -35,13 +35,13 @@
                     @if ($city != "")
                         @if($country != "")
                             {{ $city }}, {{ $country }}
+                        @else
+                            {{ $city }}, Pais no registrado
                         @endif
-                        {{ $city }}, Pais no registrado
                     @else
                         @if($country != "")
                             Ciudad no registrada, {{ $country }}
-                        @endif
-                        @if($country == "" && $city == "")
+                        @elseif($country == "" && $city == "")
                             No hay datos de localidades
                         @endif
                     @endif
