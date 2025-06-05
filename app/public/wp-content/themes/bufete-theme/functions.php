@@ -198,6 +198,13 @@ function registrar_cpt_casos() {
     );
 
     register_post_type('caso', $args);
+
+    register_post_type('evento', [
+        'labels' => ['name' => 'Eventos'],
+        'public' => true,
+        'supports' => ['title', 'editor', 'custom-fields'],
+        'show_in_rest' => true,
+    ]);
 }
 add_action('init', 'registrar_cpt_casos');
 
