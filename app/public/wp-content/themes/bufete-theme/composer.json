@@ -43,6 +43,7 @@
     "roots/acorn": "^5.0"
   },
   "require-dev": {
+    "filp/whoops": "^2.18",
     "laravel/pint": "^1.20"
   },
   "suggest": {

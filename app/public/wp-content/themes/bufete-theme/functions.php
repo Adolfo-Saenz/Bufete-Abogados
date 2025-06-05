@@ -106,6 +106,12 @@ add_action('init', function () {
   exit;
 });
 
+if (defined('WP_ENV') && WP_ENV === 'development') {
+    $whoops = new \Whoops\Run;
+    $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+    $whoops->register();
+}
+
 function redirect_wp_login_page_alternative() {
     $login_page = home_url('/formulario-de-registro/');
     $request_uri = $_SERVER['REQUEST_URI'];
