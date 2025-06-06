@@ -16,7 +16,7 @@
     <!-- jsCalendar v1.4.5 Javascript and CSS from unpkg cdn -->
     <script src="https://unpkg.com/simple-jscalendar@1.4.5/source/jsCalendar.min.js" integrity="sha384-F3Wc9EgweCL3C58eDn9902kdEH6bTDL9iW2JgwQxJYUIeudwhm4Wu9JhTkKJUtIJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/simple-jscalendar@1.4.5/source/jsCalendar.min.css" integrity="sha384-CTBW6RKuDwU/TWFl2qLavDqLuZtBzcGxBXY8WvQ0lShXglO/DsUvGkXza+6QTxs0" crossorigin="anonymous">
-    <!-- Load German language -->
+    <!-- Load spanish language -->
     <script type="text/javascript" src="jsCalendar.lang.es.js"></script>
 </head>
 
@@ -60,7 +60,7 @@
             </div>
         </div>
     </div>
-    <div class="lg:h-[500px] h-responsive md:w-2/5 bg-cover flex items-center justify-center">
+    <div class="lg:h-[500px] h-responsive md:w-2/5 bg-cover flex items-center justify-center max-md:mb-10">
         <!-- my calendar -->
         <div class="auto-jsCalendar" data-month-format="month YYYY"  data-day-format="DDD" data-language="es" data-first-day-of-the-week="2">
         </div>

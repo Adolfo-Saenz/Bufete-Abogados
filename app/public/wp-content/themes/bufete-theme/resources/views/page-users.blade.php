@@ -59,7 +59,7 @@
             </div>
         </div>
     </div>
-    <div class="lg:h-[500px] h-responsive md:w-2/5 bg-cover flex items-center justify-center">
+    <div class="lg:h-[500px] h-responsive md:w-2/5 bg-cover flex items-center justify-center max-md:mb-10">
         <!-- my calendar -->
         <div class="auto-jsCalendar" data-month-format="month YYYY"  data-day-format="DDD" data-language="es" data-first-day-of-the-week="2">
         </div>
