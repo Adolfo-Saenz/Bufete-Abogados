@@ -71,5 +71,10 @@
     'tipo' => 'Case'
 ])
 
+{{-- Eventos --}}
+@include('partials.organisms.organism-cards', [
+    'tipo' => 'Event'
+])
+
 {{-- Footer/Pie de página --}}
 @include('partials.organisms.organism-footer')
