@@ -215,7 +215,7 @@ function columnas_personalizadas_casos($columns) {
     $nuevas_columnas['title'] = $columns['title'];
     $nuevas_columnas['acf_desc'] = 'Descripción';
     $nuevas_columnas['acf_client'] = 'Cliente';
-    $nuevas_columnas['acf_lawyers'] = 'Abogados';
+    $nuevas_columnas['acf_lawyer'] = 'Abogado';
 
     foreach ($columns as $key => $value) {
         if (!isset($nuevas_columnas[$key])) {
@@ -243,21 +243,11 @@ function contenido_columna_personalizada_casos($column, $post_id) {
         }
     }
 
-    if ($column === 'acf_lawyers') {
-        if (have_rows('lawyers', $post_id)) {
-            $nombres = [];
-
-            while (have_rows('lawyers', $post_id)) {
-                the_row();
-                $lawyer_id = get_sub_field('lawyer');
-
-                if ($lawyer_id) {
-                    $user = get_userdata($lawyer_id);
-                    $nombres[] = $user ? $user->display_name : '[Desconocido]';
-                }
-            }
-
-            echo !empty($nombres) ? esc_html(implode(', ', $nombres)) : '—';
+    if ($column === 'acf_lawyer') {
+        $lawyer_id = get_field('lawyer', $post_id);
+        if ($lawyer_id) {
+            $lawyer = get_userdata($lawyer_id);
+            echo $lawyer ? esc_html($lawyer->display_name) : '[Usuario no encontrado]';
         } else {
             echo '—';
         }

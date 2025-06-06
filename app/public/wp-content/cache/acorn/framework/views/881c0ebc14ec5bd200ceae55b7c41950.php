@@ -74,21 +74,11 @@
                     $client_user = get_userdata($client_id);
                     $client_name = $client_user ? $client_user->display_name : 'Cliente desconocido';
 
-                    $lawyers = get_field('lawyers', $caso->ID);
-                    $lawyers_names = [];
-
-                    if ($lawyers) {
-                        foreach ($lawyers as $lawyer) {
-                            if (isset($lawyer['lawyer'])) {
-                                $lawyer_user = get_userdata($lawyer['lawyer']);
-                                if ($lawyer_user) {
-                                    $lawyers_names[] = $lawyer_user->display_name;
-                                }
-                            }
-                        }
-                    }
+                    $lawyer_id = get_field('lawyer', $caso->ID);
+                    $lawyer_user = get_userdata($lawyer_id);
+                    $lawyer_name = $lawyer_user ? $lawyer_user->display_name : 'Cliente desconocido';
                 ?>
-                <?php if($client_id == $user_id || $lawyers[0] == $user_id): ?>
+                <?php if($client_id == $user_id || $lawyer_id == $user_id): ?>
                     <div class="h-responsive bg-gray-200 border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6">
                         <div class="m-4 flex justify-center">
                             <img src="<?php echo e($image_url); ?>" alt="Imagen tipo caso" class="h-[150px] border-0 rounded-[10px] object-cover">
@@ -96,7 +86,7 @@
                         <div class="mr-4 ml-4">
                             <h3 class="text-[18px] font-bold mb-1"><?php echo e($caso->post_title); ?></h3>
                             <p><strong>Cliente:</strong> <?php echo e($client_name); ?></p>
-                            <p><strong>Abogado(s):</strong> <?php echo e(implode(', ', $lawyers_names) ?: 'Sin abogado asignado'); ?></p>
+                            <p><strong>Abogado(s):</strong> <?php echo e($lawyer_name); ?></p>
                         </div>
                         <div class="m-4">
                             <a href="<?php echo e($caso->guid); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
