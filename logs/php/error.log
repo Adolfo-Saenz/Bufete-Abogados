@@ -1782,3 +1782,8 @@ Stack trace:
 #8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
 #9 {main}
   thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\181a4d283edae8c7d60704d2916bfa36.php on line 69
+[06-Jun-2025 11:46:58 UTC] PHP Warning:  Undefined variable $image_url in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 145
+[06-Jun-2025 11:47:57 UTC] PHP Warning:  Undefined variable $image_url in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 145
+[06-Jun-2025 11:51:42 UTC] PHP Warning:  Undefined variable $image_url in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 145
+[06-Jun-2025 11:52:09 UTC] PHP Warning:  Undefined variable $image_url in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 143
+[06-Jun-2025 11:52:19 UTC] PHP Warning:  Undefined variable $image_url in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 142

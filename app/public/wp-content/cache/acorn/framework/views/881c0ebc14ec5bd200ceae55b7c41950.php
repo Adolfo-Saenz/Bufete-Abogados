@@ -7,14 +7,21 @@
     ]);
 
     $args = [
-    'post_type' => 'caso',
-    'posts_per_page' => 4,
+        'post_type' => 'caso',
+        'posts_per_page' => 4,
     ];
 
     $query = new WP_Query($args);
 
     $user = wp_get_current_user();
     $user_id = $user->ID;
+
+    $argsEventos = [
+        'post_type' => 'evento',
+        'posts_per_page' => 4,
+    ];
+    
+    $eventos = new WP_Query($argsEventos);
 ?>
 
 <?php if($tipo == "Espec"): ?>
@@ -52,7 +59,7 @@
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </div>
     </section>
-<?php else: ?>
+<?php elseif($tipo == "Case"): ?>
     
     <section class="px-6 py-10">
         <div class="grid grid-cols-1 gap-2 lg:grid-cols-[1fr_auto] items-center mb-3">
@@ -76,7 +83,7 @@
 
                     $lawyer_id = get_field('lawyer', $caso->ID);
                     $lawyer_user = get_userdata($lawyer_id);
-                    $lawyer_name = $lawyer_user ? $lawyer_user->display_name : 'Cliente desconocido';
+                    $lawyer_name = $lawyer_user ? $lawyer_user->display_name : 'Abogado desconocido';
                 ?>
                 <?php if($client_id == $user_id || $lawyer_id == $user_id): ?>
                     <div class="h-responsive bg-gray-200 border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6">
@@ -91,6 +98,60 @@
                         <div class="m-4">
                             <a href="<?php echo e($caso->guid); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
                                 Leer caso
+                            </a>
+                        </div>
+                    </div>
+                <?php endif; ?> 
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+        </div>
+    </section>
+<?php else: ?>
+    
+    <section class="px-6 py-10">
+        <div class="grid grid-cols-1 gap-2 lg:grid-cols-[1fr_auto] items-center mb-3">
+            <div class="flex items-center space-x-2">
+                <h3 class="font-bold text-[25px]">Eventos</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                </svg>  
+            </div>
+            <a href="#" class="text-[16px] w-[70px] h-[25px]">Ver todos</a>
+        </div>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <?php $__currentLoopData = $eventos->posts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $evento): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <?php
+                    $fecha_start = get_field('fecha-inicio', $evento->ID);
+                    $fecha_end = get_field('fecha-fin', $evento->ID);
+
+                    $caso_relacionado = get_field('caso-relacionado', $evento->ID);
+                    $caso_relacionado = $caso_relacionado[0];
+
+                    $tipo_caso_id = get_field('type', $caso_relacionado->ID);
+                    $image_url = $tipo_caso_id ? get_field('category-pic', 'term_' . $tipo_caso_id) : null;
+
+                    $client_id_ev = get_field('client', $caso_relacionado->ID);
+                    $client_user_ev = get_userdata($client_id_ev);
+                    $client_name_ev = $client_user_ev ? $client_user_ev->display_name : 'Cliente desconocido';
+
+                    $lawyer_id_ev = get_field('lawyer', $caso_relacionado->ID);
+                    $lawyer_user_ev = get_userdata($lawyer_id_ev);
+                    $lawyer_name_ev = $lawyer_user_ev ? $lawyer_user_ev->display_name : 'Abogado desconocido';
+                ?>
+                <?php if($client_id_ev == $user_id || $lawyer_id_ev == $user_id): ?>
+                    <div class="h-responsive bg-gray-200 border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6">
+                        <div class="m-4 flex justify-center">
+                            <img src="<?php echo e($image_url); ?>" alt="Imagen tipo caso" class="h-[150px] border-0 rounded-[10px] object-cover">
+                        </div>
+                        <div class="mr-4 ml-4">
+                            <h3 class="text-[18px] font-bold mb-1"><?php echo e($evento->post_title); ?></h3>
+                            <p><strong>Cliente:</strong> <?php echo e($client_name_ev); ?></p>
+                            <p><strong>Abogado:</strong> <?php echo e($lawyer_name_ev); ?></p>
+                            <p><strong>Comienza:</strong> <?php echo e($fecha_start); ?></p>
+                            <p><strong>Finaliza:</strong> <?php echo e($fecha_end); ?></p>
+                        </div>
+                        <div class="m-4">
+                            <a href="<?php echo e($evento->guid); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
+                                Ver evento
                             </a>
                         </div>
                     </div>
