@@ -46,7 +46,7 @@
                         @endif
                     @endif
                 </p>
-                <a href="{{ "#" }}" class="boton text-[20px] lg:ml-12 mt-10 lg:mb-0 mb-7 [width:186px] [height:65px] flex items-center justify-center bg-white text-[#232536] rounded-[10px] font-bold font-sans hover:scale-105 transition-transform duration-200">
+                <a href="{{ "http://bufete-abogados.local/wp-admin/profile.php" }}" class="boton text-[20px] lg:ml-12 mt-10 lg:mb-0 mb-7 [width:186px] [height:65px] flex items-center justify-center bg-white text-[#232536] rounded-[10px] font-bold font-sans hover:scale-105 transition-transform duration-200">
                     Editar perfil
                 </a>
             </div>
