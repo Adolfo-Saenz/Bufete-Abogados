@@ -11,17 +11,6 @@
     $city = get_field('city', 'user_' . $user_id);
     $country = get_field('country', 'user_' . $user_id);
     $profile_image = get_field('profile-image', 'user_' . $user_id);
-
-    $args = [
-    'post_type' => 'evento',
-    'meta_query' => [[
-        'key' => 'usuarios_invitados',
-        'value' => '"' . $user_id . '"',
-        'compare' => 'LIKE',
-    ]]
-    ];
-    $eventos = new WP_Query($args);
-
 ?>
 
 
@@ -65,18 +54,9 @@
         </div>
     </div>
     <div class="lg:h-[500px] bg-red-600 h-responsive md:w-2/5 bg-cover flex items-center justify-center">
-        <div id="calendar"></div>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const calendar = new FullCalendar.Calendar(document.getElementById('calendar'), {
-                    initialView: 'dayGridMonth',
-                    events: <?php echo json_encode($eventos->posts->map(function ($evento) {
-                        return [
-                            'title' => get_the_title($evento), 'start' => get_field('fecha_inicio', $evento->ID)) ?>
-                });
-                calendar.render();
-            });
-        </script>
+        <div class="w-full h-100 font-bold text-[85px]">
+            <h1>Calendar</h1>
+        </div>
     </div>
 </section>
 
