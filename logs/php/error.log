@@ -1750,3 +1750,7 @@ Stack trace:
 #8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
 #9 {main}
   thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php on line 75
+[06-Jun-2025 07:18:59 UTC] PHP Warning:  foreach() argument must be of type array|object, int given in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 81
+[06-Jun-2025 07:18:59 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 91
+[06-Jun-2025 07:18:59 UTC] PHP Warning:  foreach() argument must be of type array|object, int given in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 81
+[06-Jun-2025 07:18:59 UTC] PHP Warning:  Trying to access array offset on value of type int in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 91
