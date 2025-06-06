@@ -70,6 +70,9 @@
             <a href="#" class="text-[16px] w-[70px] h-[25px]">Ver todos</a>
         </div>
         <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            @php
+                $cuenta = 0;
+            @endphp
             @foreach ($query->posts as $caso)
                 @php
                     $tipo_caso_id = get_field('type', $caso->ID);
@@ -84,6 +87,9 @@
                     $lawyer_name = $lawyer_user ? $lawyer_user->display_name : 'Abogado desconocido';
                 @endphp
                 @if($client_id == $user_id || $lawyer_id == $user_id)
+                    @php
+                        $cuenta++;
+                    @endphp
                     <div class="h-responsive bg-gray-200 border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6">
                         <div class="m-4 flex justify-center">
                             <img src="{{ $image_url }}" alt="Imagen tipo caso" class="h-[150px] border-0 rounded-[10px] object-cover">
@@ -99,8 +105,13 @@
                             </a>
                         </div>
                     </div>
-                @endif 
+                @endif
             @endforeach
+            @if ($cuenta == 0) 
+                <div class="h-responsive border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6">
+                    No perteneces a ningún caso
+                </div>  
+            @endif
         </div>
     </section>
 @else
@@ -116,6 +127,9 @@
             <a href="#" class="text-[16px] w-[70px] h-[25px]">Ver todos</a>
         </div>
         <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            @php
+                $cuenta = 0;
+            @endphp
             @foreach ($eventos->posts as $evento)
                 @php
                     $fecha_start = get_field('fecha-inicio', $evento->ID);
@@ -136,6 +150,9 @@
                     $lawyer_name_ev = $lawyer_user_ev ? $lawyer_user_ev->display_name : 'Abogado desconocido';
                 @endphp
                 @if($client_id_ev == $user_id || $lawyer_id_ev == $user_id)
+                    @php
+                        $cuenta++;
+                    @endphp
                     <div class="h-responsive bg-gray-200 border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6">
                         <div class="m-4 flex justify-center">
                             <img src="{{ $image_url }}" alt="Imagen tipo caso" class="h-[150px] border-0 rounded-[10px] object-cover">
@@ -155,6 +172,11 @@
                     </div>
                 @endif 
             @endforeach
+            @if ($cuenta == 0) 
+                <div class="h-responsive border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6">
+                    No tienes ningún evento
+                </div>  
+            @endif
         </div>
     </section>
 @endif

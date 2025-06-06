@@ -72,6 +72,9 @@
             <a href="#" class="text-[16px] w-[70px] h-[25px]">Ver todos</a>
         </div>
         <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <?php
+                $cuenta = 0;
+            ?>
             <?php $__currentLoopData = $query->posts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $caso): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <?php
                     $tipo_caso_id = get_field('type', $caso->ID);
@@ -86,6 +89,9 @@
                     $lawyer_name = $lawyer_user ? $lawyer_user->display_name : 'Abogado desconocido';
                 ?>
                 <?php if($client_id == $user_id || $lawyer_id == $user_id): ?>
+                    <?php
+                        $cuenta++;
+                    ?>
                     <div class="h-responsive bg-gray-200 border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6">
                         <div class="m-4 flex justify-center">
                             <img src="<?php echo e($image_url); ?>" alt="Imagen tipo caso" class="h-[150px] border-0 rounded-[10px] object-cover">
@@ -101,8 +107,13 @@
                             </a>
                         </div>
                     </div>
-                <?php endif; ?> 
+                <?php endif; ?>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+            <?php if($cuenta == 0): ?> 
+                <div class="h-responsive border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6">
+                    No perteneces a ningún caso
+                </div>  
+            <?php endif; ?>
         </div>
     </section>
 <?php else: ?>
@@ -118,6 +129,9 @@
             <a href="#" class="text-[16px] w-[70px] h-[25px]">Ver todos</a>
         </div>
         <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <?php
+                $cuenta = 0;
+            ?>
             <?php $__currentLoopData = $eventos->posts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $evento): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <?php
                     $fecha_start = get_field('fecha-inicio', $evento->ID);
@@ -138,6 +152,9 @@
                     $lawyer_name_ev = $lawyer_user_ev ? $lawyer_user_ev->display_name : 'Abogado desconocido';
                 ?>
                 <?php if($client_id_ev == $user_id || $lawyer_id_ev == $user_id): ?>
+                    <?php
+                        $cuenta++;
+                    ?>
                     <div class="h-responsive bg-gray-200 border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6">
                         <div class="m-4 flex justify-center">
                             <img src="<?php echo e($image_url); ?>" alt="Imagen tipo caso" class="h-[150px] border-0 rounded-[10px] object-cover">
@@ -157,6 +174,11 @@
                     </div>
                 <?php endif; ?> 
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+            <?php if($cuenta == 0): ?> 
+                <div class="h-responsive border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6">
+                    No tienes ningún evento
+                </div>  
+            <?php endif; ?>
         </div>
     </section>
 <?php endif; ?><?php /**PATH C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views/partials/organisms/organism-cards.blade.php ENDPATH**/ ?>
