@@ -12,6 +12,13 @@
     $country = get_field('country', 'user_' . $user_id);
     $profile_image = get_field('profile-image', 'user_' . $user_id);
 ?>
+<head>
+    <!-- jsCalendar v1.4.5 Javascript and CSS from unpkg cdn -->
+    <script src="https://unpkg.com/simple-jscalendar@1.4.5/source/jsCalendar.min.js" integrity="sha384-F3Wc9EgweCL3C58eDn9902kdEH6bTDL9iW2JgwQxJYUIeudwhm4Wu9JhTkKJUtIJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/simple-jscalendar@1.4.5/source/jsCalendar.min.css" integrity="sha384-CTBW6RKuDwU/TWFl2qLavDqLuZtBzcGxBXY8WvQ0lShXglO/DsUvGkXza+6QTxs0" crossorigin="anonymous">
+    <!-- Load German language -->
+    <script type="text/javascript" src="jsCalendar.lang.es.js"></script>
+</head>
 
 
 <?php echo $__env->make('partials.organisms.organism-header', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
@@ -53,9 +60,9 @@
             </div>
         </div>
     </div>
-    <div class="lg:h-[500px] bg-red-600 h-responsive md:w-2/5 bg-cover flex items-center justify-center">
-        <div class="w-full h-100 font-bold text-[85px]">
-            <h1>Calendar</h1>
+    <div class="lg:h-[500px] h-responsive md:w-2/5 bg-cover flex items-center justify-center">
+        <!-- my calendar -->
+        <div class="auto-jsCalendar" data-month-format="month YYYY"  data-day-format="DDD" data-language="es" data-first-day-of-the-week="2">
         </div>
     </div>
 </section>
