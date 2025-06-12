@@ -69,7 +69,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
                 </svg>  
             </div>
-            <a href="#" class="text-[16px] w-[70px] h-[25px]">Ver todos</a>
+            <a href="http://bufete-abogados.local/case-list/" class="text-[16px] w-[70px] h-[25px]">Ver todos</a>
         </div>
         <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             @php
