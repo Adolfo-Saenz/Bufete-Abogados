@@ -1838,3 +1838,171 @@ Stack trace:
 [12-Jun-2025 07:13:12 UTC] PHP Warning:  Undefined variable $fecha_end in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 250
 [12-Jun-2025 07:13:12 UTC] PHP Warning:  Undefined variable $evento in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 253
 [12-Jun-2025 07:13:12 UTC] PHP Warning:  Attempt to read property "guid" on null in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 253
+[12-Jun-2025 07:32:09 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:283
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php(73): Illuminate\View\View->render()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#13 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#14 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#15 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#16 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#17 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#18 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:283
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ParseError), 2)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php(73): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#13 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#14 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#15 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#16 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#17 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:283
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Illuminate\View\ViewException), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 283
+[12-Jun-2025 07:32:23 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:283
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php(73): Illuminate\View\View->render()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#13 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#14 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#15 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#16 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#17 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#18 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:283
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ParseError), 2)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php(73): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#13 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#14 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#15 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#16 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#17 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:283
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Illuminate\View\ViewException), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 283
+[12-Jun-2025 07:32:25 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:283
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php(73): Illuminate\View\View->render()
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#13 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#14 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#15 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#16 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#17 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#18 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:283
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ParseError), 2)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\f2432d954ea664e216d2a73f80ddd5d6.php(73): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#13 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#14 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#15 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#16 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#17 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\partials\organisms\organism-cards.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php:283
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Illuminate\View\ViewException), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\881c0ebc14ec5bd200ceae55b7c41950.php on line 283
