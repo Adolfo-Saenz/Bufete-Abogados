@@ -187,6 +187,7 @@ function registrar_cpt_casos() {
     $args = array(
         'labels'             => $labels,
         'public'             => true,
+        'publicly_queryable' => true,
         'show_in_menu'       => true,
         'menu_position'      => 5,
         'menu_icon'          => 'dashicons-portfolio',
