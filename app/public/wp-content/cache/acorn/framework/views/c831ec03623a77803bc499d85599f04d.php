@@ -39,7 +39,7 @@
 
                 $desc = get_field('desc', $caso->ID);
             ?>
-            <?php if($client_id == $user_id || $lawyer_id == $user_id): ?>
+            <?php if($client_id == $user_id || $lawyer_id == $user_id ||(current_user_can('administrator'))): ?>
                 <?php
                     $cuenta++;
                 ?>
