@@ -103,7 +103,7 @@
                                 <p><strong>Abogado(s):</strong> {{ $lawyer_name }}</p>
                             </div>
                             <div class="m-4">
-                                <a href="{{ $caso->guid }}" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
+                                <a href="{{ get_permalink($caso->ID) }}" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
                                     Leer caso
                                 </a>
                             </div>
@@ -170,7 +170,7 @@
                                 <p><strong>Finaliza:</strong> {{ $fecha_end }}</p>
                             </div>
                             <div class="m-4">
-                                <a href="{{ $evento->guid }}" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
+                                <a href="{{ get_permalink($evento->ID) }}" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
                                     Ver evento
                                 </a>
                             </div>
@@ -262,7 +262,7 @@
                                     <p><strong>Total a pagar:</strong> {{ $total_pagar }} €</p>
                                 </div>
                                 <div class="m-4">
-                                    <a href="{{ $bill->guid }}" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
+                                    <a href="{{ get_permalink($bill->ID) }}" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
                                         Ver factura
                                     </a>
                                 </div>

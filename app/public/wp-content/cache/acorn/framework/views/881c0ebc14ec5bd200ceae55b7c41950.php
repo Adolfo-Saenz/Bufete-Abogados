@@ -105,7 +105,7 @@
                                 <p><strong>Abogado(s):</strong> <?php echo e($lawyer_name); ?></p>
                             </div>
                             <div class="m-4">
-                                <a href="<?php echo e($caso->guid); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
+                                <a href="<?php echo e(get_permalink($caso->ID)); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
                                     Leer caso
                                 </a>
                             </div>
@@ -172,7 +172,7 @@
                                 <p><strong>Finaliza:</strong> <?php echo e($fecha_end); ?></p>
                             </div>
                             <div class="m-4">
-                                <a href="<?php echo e($evento->guid); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
+                                <a href="<?php echo e(get_permalink($evento->ID)); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
                                     Ver evento
                                 </a>
                             </div>
@@ -264,7 +264,7 @@
                                     <p><strong>Total a pagar:</strong> <?php echo e($total_pagar); ?> €</p>
                                 </div>
                                 <div class="m-4">
-                                    <a href="<?php echo e($bill->guid); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
+                                    <a href="<?php echo e(get_permalink($bill->ID)); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
                                         Ver factura
                                     </a>
                                 </div>
