@@ -2,7 +2,7 @@
 @php
     $user = wp_get_current_user();
     $user_id = $user->ID;
-    $perfil = $user->roles[0];
+    $perfil = $user->roles;
 
     /* Obtenemos las categorías de Wordpress */
     $categorias = get_categories([
@@ -187,7 +187,7 @@
     </section>
 @elseif($tipo == "Bills")
     {{-- Facturas --}}
-    @if($perfil == "Client")
+    @if(current_user_can('cliente'))
         <section class="px-6 py-10">
             <div class="grid grid-cols-1 gap-2 lg:grid-cols-[1fr_auto] items-center mb-3">
                 <div class="flex items-center space-x-2">
