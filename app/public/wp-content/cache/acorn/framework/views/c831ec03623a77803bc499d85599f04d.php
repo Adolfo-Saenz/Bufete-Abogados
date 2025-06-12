@@ -75,7 +75,7 @@
                             </p>
                             
                             <div>
-                                <a href="<?php echo e($caso->guid); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
+                                <a href="<?php echo e(get_permalink($caso->ID)); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
                                     Leer caso
                                 </a>
                             </div>
