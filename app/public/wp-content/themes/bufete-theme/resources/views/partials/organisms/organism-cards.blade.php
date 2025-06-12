@@ -89,7 +89,7 @@
                     $lawyer_name = $lawyer_user ? $lawyer_user->display_name : 'Abogado desconocido';
                 @endphp
                 @if($cuenta < 4)
-                    @if($client_id == $user_id || $lawyer_id == $user_id)
+                    @if($client_id == $user_id || $lawyer_id == $user_id || (current_user_can('administrador')))
                         @php
                             $cuenta++;
                         @endphp
@@ -154,7 +154,7 @@
                     $lawyer_name_ev = $lawyer_user_ev ? $lawyer_user_ev->display_name : 'Abogado desconocido';
                 @endphp
                 @if($cuenta < 4)
-                    @if($client_id_ev == $user_id || $lawyer_id_ev == $user_id)
+                    @if($client_id_ev == $user_id || $lawyer_id_ev == $user_id || (current_user_can('administrador')))
                         @php
                             $cuenta++;
                         @endphp
@@ -187,7 +187,7 @@
     </section>
 @elseif($tipo == "Bills")
     {{-- Facturas --}}
-    @if(current_user_can('cliente'))
+    @if(current_user_can('cliente') || current_user_can('administrador'))
         <section class="px-6 py-10">
             <div class="grid grid-cols-1 gap-2 lg:grid-cols-[1fr_auto] items-center mb-3">
                 <div class="flex items-center space-x-2">
@@ -234,7 +234,7 @@
                         $total_pagar = $horas_totales_decimal * $precio_hora;
                     @endphp
                     @if($cuenta < 4)
-                        @if($client_id_ev == $user_id)
+                        @if($client_id_ev == $user_id || (current_user_can('administrador')))
                             @php
                                 $cuenta++;
                             @endphp
