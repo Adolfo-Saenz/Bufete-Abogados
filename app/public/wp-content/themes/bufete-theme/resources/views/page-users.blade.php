@@ -76,5 +76,10 @@
     'tipo' => 'Event'
 ])
 
+{{-- Facturas --}}
+@include('partials.organisms.organism-cards', [
+    'tipo' => 'Bills'
+])
+
 {{-- Footer/Pie de página --}}
 @include('partials.organisms.organism-footer')
