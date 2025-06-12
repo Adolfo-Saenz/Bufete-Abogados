@@ -205,6 +205,13 @@ function registrar_cpt_casos() {
         'supports' => ['title', 'editor', 'custom-fields'],
         'show_in_rest' => true,
     ]);
+
+    register_post_type('factura', [
+        'labels' => ['name' => 'Facturas'],
+        'public' => true,
+        'supports' => ['title', 'editor', 'custom-fields'],
+        'show_in_rest' => true,
+    ]);
 }
 add_action('init', 'registrar_cpt_casos');
 
