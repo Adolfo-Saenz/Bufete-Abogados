@@ -53,7 +53,7 @@
 {{-- Description --}}
 <section class="px-10 py-10">
     <h1 class="text-[40px] font-bold mb-8">Descripcion:</h1>
-    <p class="text-[20px] mb-10">{!! $desc !!}</p>
+    <p class="text-[20px] mb-10">{!! nl2br(e($desc)) !!}</p>
 </section>
 
 @include('partials.organisms.organism-footer')
