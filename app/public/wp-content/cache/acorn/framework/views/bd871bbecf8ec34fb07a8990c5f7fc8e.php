@@ -70,7 +70,7 @@
     <section class="px-10 py-10">
         <div class="flex flex-row max-sm:flex-col items-center items-justified-space-between">
             <h1 class="text-[40px] font-bold mb-8">Eventos:</h1>
-            <a href="#">Ver más</a>
+            <a href="http://bufete-abogados.local/events-list?caso_id=<?php echo e(get_the_ID()); ?>">Ver más</a>
         </div>
         <div class="flex md:flex-row items-justified-space-between">
             <div class="max-md:w-full h-responsive w-2/5 bg-cover flex items-center justify-center max-md:mb-10">
