@@ -16,6 +16,8 @@
     $estado = get_field('status');
 
     $fecha_inicio = get_field('starting-date');
+
+    $desc = get_field('desc');
 ?>
 
 <head>
@@ -28,6 +30,7 @@
 
 
 <?php echo $__env->make('partials.organisms.organism-header', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
+
 
 <section class="px-10 py-10 flex flex-row">
     <div class="lg:w-2/5 max-lg:3/5 flex flex-col gap-5">
@@ -45,6 +48,12 @@
         <div class="auto-jsCalendar" data-month-format="month YYYY"  data-day-format="DDD" data-language="es" data-first-day-of-the-week="2">
         </div>
     </div>
+</section>
+
+
+<section class="px-10 py-10">
+    <h1 class="text-[40px] font-bold mb-8">Descripcion:</h1>
+    <p class="text-[20px] mb-10"><?php echo $desc; ?></p>
 </section>
 
 <?php echo $__env->make('partials.organisms.organism-footer', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>

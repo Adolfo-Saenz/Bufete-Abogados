@@ -2551,3 +2551,33 @@ Stack trace:
 [12-Jun-2025 10:01:31 UTC] PHP Warning:  Undefined variable $post in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\c69477886554be6e81076dbea840c8af.php on line 55
 [12-Jun-2025 10:01:31 UTC] PHP Warning:  Attempt to read property "post_content" on null in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\c69477886554be6e81076dbea840c8af.php on line 55
 [12-Jun-2025 10:58:57 UTC] PHP Warning:  Undefined variable $tipo in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\c831ec03623a77803bc499d85599f04d.php on line 14
+[12-Jun-2025 14:01:57 UTC] PHP Fatal error:  Uncaught TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, WP_User given in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\helpers.php:141
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\helpers.php(141): htmlspecialchars(Object(WP_User), 11, 'UTF-8', true)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\bd871bbecf8ec34fb07a8990c5f7fc8e.php(24): e(Object(WP_User))
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(123): require('C:\\Users\\adolfo...')
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\filesystem\Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire('C:\\Users\\adolfo...', Array)
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#9 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#10 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#11 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#12 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#13 {main}
+
+Next Illuminate\View\ViewException: htmlspecialchars(): Argument #1 ($string) must be of type string, WP_User given (View: C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\resources\views\single-caso.blade.php) in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\helpers.php:141
+Stack trace:
+#0 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\PhpEngine.php(59): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(TypeError), 1)
+#1 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\Engines\CompilerEngine.php(74): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\Users\\adolfo...', Array)
+#2 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(208): Illuminate\View\Engines\CompilerEngine->get('C:\\Users\\adolfo...', Array)
+#3 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(191): Illuminate\View\View->getContents()
+#4 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\view\View.php(160): Illuminate\View\View->renderContents()
+#5 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\index.php(3): Illuminate\View\View->render()
+#6 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\adolfo...')
+#7 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-blog-header.php(19): require_once('C:\\Users\\adolfo...')
+#8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
+#9 {main}
+  thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\helpers.php on line 141
