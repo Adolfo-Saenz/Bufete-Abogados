@@ -32,8 +32,8 @@
 <?php echo $__env->make('partials.organisms.organism-header', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 
 
-<section class="px-10 py-10 flex flex-row">
-    <div class="lg:w-2/5 max-lg:3/5 flex flex-col gap-5">
+<section class="px-10 py-10 max-md:p-8 flex flex-row items-justified-space-between max-md:flex-col">
+    <div class="lg:w-2/5 max-lg:3/5 max-md:w-full flex flex-col gap-5 max-md:mb-6">
         <h1 class="text-[45px] font-bold mb-5"><?php echo e(get_the_title()); ?></h1>
         <p class="text-[20px]"><b>Cliente:</b> <?php echo e($client_name); ?></p>
         <p class="text-[20px]"><b>Abogado:</b> <?php echo e($lawyer_name); ?></p>
@@ -43,7 +43,7 @@
     <div class="max-lg:hidden lg:w-1/5 flex items-center justify-center">
         <img src="<?php echo e($image_url); ?>" alt="Imagen tipo de caso">
     </div>
-    <div class="h-responsive w-2/5 bg-cover flex items-center justify-center max-md:mb-10">
+    <div class="max-md:w-full h-responsive w-2/5 bg-cover flex items-center justify-center max-md:mb-10">
         <!-- my calendar -->
         <div class="auto-jsCalendar" data-month-format="month YYYY"  data-day-format="DDD" data-language="es" data-first-day-of-the-week="2">
         </div>
