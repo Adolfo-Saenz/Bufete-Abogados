@@ -43,7 +43,7 @@
                 @php
                     $cuenta++;
                 @endphp
-                <div class="py-5 px-10">
+                <div class="border border-gray-400 py-5 px-10">
                     <div class="mb-7 grid grid-cols-5 max-lg:grid-cols-4 gap-4">
                         <div class="max-lg:col-span-4 col-span-1 flex items-center justify-center">
                             <img src="{{ $image_url }}" alt="Imagen tipo caso" class="h-[150px] border-0 rounded-[10px] object-cover">
