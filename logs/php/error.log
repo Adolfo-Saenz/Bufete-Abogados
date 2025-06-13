@@ -2581,3 +2581,13 @@ Stack trace:
 #8 C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\index.php(17): require('C:\\Users\\adolfo...')
 #9 {main}
   thrown in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\themes\bufete-theme\vendor\illuminate\support\helpers.php on line 141
+[13-Jun-2025 11:27:38 UTC] PHP Warning:  Undefined array key "caso" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\c831ec03623a77803bc499d85599f04d.php on line 131
+[13-Jun-2025 11:27:38 UTC] PHP Warning:  Undefined array key "caso" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\c831ec03623a77803bc499d85599f04d.php on line 131
+[13-Jun-2025 11:27:38 UTC] PHP Warning:  Undefined array key "caso" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\c831ec03623a77803bc499d85599f04d.php on line 131
+[13-Jun-2025 11:27:38 UTC] PHP Warning:  Undefined array key "caso" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\c831ec03623a77803bc499d85599f04d.php on line 131
+[13-Jun-2025 11:27:38 UTC] PHP Warning:  Undefined array key "caso" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\c831ec03623a77803bc499d85599f04d.php on line 131
+[13-Jun-2025 11:27:50 UTC] PHP Warning:  Undefined array key "caso" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\c831ec03623a77803bc499d85599f04d.php on line 131
+[13-Jun-2025 11:27:50 UTC] PHP Warning:  Undefined array key "caso" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\c831ec03623a77803bc499d85599f04d.php on line 131
+[13-Jun-2025 11:27:50 UTC] PHP Warning:  Undefined array key "caso" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\c831ec03623a77803bc499d85599f04d.php on line 131
+[13-Jun-2025 11:27:50 UTC] PHP Warning:  Undefined array key "caso" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\c831ec03623a77803bc499d85599f04d.php on line 131
+[13-Jun-2025 11:27:50 UTC] PHP Warning:  Undefined array key "caso" in C:\Users\adolfo.saenz\Local Sites\bufete-abogados\app\public\wp-content\cache\acorn\framework\views\c831ec03623a77803bc499d85599f04d.php on line 131

@@ -128,7 +128,7 @@
                 $lawyer_image_ev = get_field('profile-image', 'user_' . $lawyer_id_ev);
             ?>
 
-            <?php if($caso != '' && $caso == $caso_relacionado): ?>
+            <?php if($caso != '' && $caso == $caso_relacionado->ID): ?>
                 <?php
                     $cuenta++;
                 ?>
@@ -159,7 +159,7 @@
                         </div>
                     </div>
                 </div>
-            <?php elseif($client_id_ev == $user_id || $lawyer_id_ev == $user_id ||(current_user_can('administrator'))): ?>
+            <?php elseif($caso == '' && $client_id_ev == $user_id || $caso == '' && $lawyer_id_ev == $user_id || $caso == '' && (current_user_can('administrator'))): ?>
                 <?php
                     $cuenta++;
                 ?>
