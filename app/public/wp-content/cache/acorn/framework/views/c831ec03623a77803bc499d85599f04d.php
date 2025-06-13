@@ -128,8 +128,38 @@
                 $lawyer_image_ev = get_field('profile-image', 'user_' . $lawyer_id_ev);
             ?>
 
-
-            <?php if($client_id_ev == $user_id || $lawyer_id_ev == $user_id ||(current_user_can('administrator'))): ?>
+            <?php if($caso != '' && $caso == $caso_relacionado): ?>
+                <?php
+                    $cuenta++;
+                ?>
+                <div class="border border-gray-400 py-5 px-10">
+                    <div class="mb-7 grid grid-cols-5 max-lg:grid-cols-4 gap-4">
+                        <div class="max-lg:col-span-4 col-span-1 flex items-center justify-center">
+                            <img src="<?php echo e($image_url); ?>" alt="Imagen tipo caso" class="h-[150px] border-0 rounded-[10px] object-cover">
+                        </div>
+                        <div class="col-span-4">
+                            
+                            <h1 class="mb-2 text-[30px] font-bold"><?php echo e($evento->post_title); ?></h1>
+                            
+                            <div class="flex flex-row items-center gap-4 mb-3">
+                                <p><b>Caso: </b> <?php echo e(get_the_title($caso_relacionado)); ?></p>
+                            </div>
+                            <div class="flex flex-row items-center gap-4 mb-3">
+                                <p><b>Fecha inicio: </b><?php echo e($fecha_start); ?></p>
+                            </div>
+                            <div class="flex flex-row items-center gap-4 mb-3">
+                                <p><b>Fecha fin: </b><?php echo e($fecha_end); ?></p>
+                            </div>
+                            
+                            <div>
+                                <a href="<?php echo e(get_permalink($evento->ID)); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
+                                    Ver evento
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php elseif($client_id_ev == $user_id || $lawyer_id_ev == $user_id ||(current_user_can('administrator'))): ?>
                 <?php
                     $cuenta++;
                 ?>
