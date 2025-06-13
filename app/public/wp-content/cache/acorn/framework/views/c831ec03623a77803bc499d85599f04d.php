@@ -120,12 +120,16 @@
                 $client_id_ev = get_field('client', $caso_relacionado->ID);
                 $client_user_ev = get_userdata($client_id_ev);
                 $client_name_ev = $client_user_ev ? $client_user_ev->display_name : 'Cliente desconocido';
-
+                $client_image_ev = get_field('profile-image', 'user_' . $client_id_ev);
+        
                 $lawyer_id_ev = get_field('lawyer', $caso_relacionado->ID);
                 $lawyer_user_ev = get_userdata($lawyer_id_ev);
                 $lawyer_name_ev = $lawyer_user_ev ? $lawyer_user_ev->display_name : 'Abogado desconocido';
+                $lawyer_image_ev = get_field('profile-image', 'user_' . $lawyer_id_ev);
             ?>
-            <?php if($client_id == $user_id || $lawyer_id == $user_id ||(current_user_can('administrator'))): ?>
+
+
+            <?php if($client_id_ev == $user_id || $lawyer_id_ev == $user_id ||(current_user_can('administrator'))): ?>
                 <?php
                     $cuenta++;
                 ?>
@@ -136,32 +140,20 @@
                         </div>
                         <div class="col-span-4">
                             
-                            <h1 class="mb-2 text-[30px] font-bold"><?php echo e($caso->post_title); ?></h1>
+                            <h1 class="mb-2 text-[30px] font-bold"><?php echo e($evento->post_title); ?></h1>
                             
                             <div class="flex flex-row items-center gap-4 mb-3">
-                                <?php if($lawyer_image != ""): ?>
-                                    <img src="<?php echo e($lawyer_image); ?>" alt="Imagen Juez" class="w-[40px] h-[40px] rounded-full">
-                                <?php else: ?>
-                                    <img src="http://bufete-abogados.local/wp-content/uploads/2025/06/default.png" alt="Imagen Juez" class="w-[40px] h-[40px] rounded-full">
-                                <?php endif; ?>
-                                <p><?php echo e($lawyer_name); ?></p>
+                                <p><b>Caso: </b> <?php echo e(get_the_title($caso_relacionado)); ?></p>
                             </div>
                             <div class="flex flex-row items-center gap-4 mb-3">
-                                <?php if($client_image != ""): ?>
-                                    <img src="<?php echo e($client_image); ?>" alt="Imagen cliente" class="w-[40px] h-[40px] rounded-full">
-                                <?php else: ?>
-                                    <img src="http://bufete-abogados.local/wp-content/uploads/2025/06/default.png" alt="Imagen cliente" class="w-[40px] h-[40px] rounded-full">
-                                <?php endif; ?>
-                                <p><?php echo e($client_name); ?></p>
+                                <p><b>Fecha inicio: </b><?php echo e($fecha_start); ?></p>
                             </div>
-                            
-                            <p class="text-[15px] mt-4 mb-4">
-                                <?php echo e(wp_trim_words($desc, 30, '...')); ?>
-
-                            </p>
+                            <div class="flex flex-row items-center gap-4 mb-3">
+                                <p><b>Fecha fin: </b><?php echo e($fecha_end); ?></p>
+                            </div>
                             
                             <div>
-                                <a href="<?php echo e(get_permalink($caso->ID)); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
+                                <a href="<?php echo e(get_permalink($evento->ID)); ?>" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
                                     Leer caso
                                 </a>
                             </div>
@@ -172,7 +164,7 @@
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         <?php if($cuenta == 0): ?> 
             <div class="h-responsive border-0 rounded-[15px] flex flex-col justify-center gap-2 mb-6 ml-6">
-                No perteneces a ningún caso
+                No tienes ningún evento programado
             </div>  
         <?php endif; ?>
     </section>
