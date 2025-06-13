@@ -153,7 +153,7 @@
                             {{-- Botón --}}
                             <div>
                                 <a href="{{ get_permalink($evento->ID) }}" class="inline-block hover:bg-[#767CB5] bg-[#6A6B75] text-white px-4 py-2 rounded transition">
-                                    Leer caso
+                                    Ver evento
                                 </a>
                             </div>
                         </div>
